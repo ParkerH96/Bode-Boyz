@@ -23,3 +23,8 @@
 .page-content {
   padding-right: 10px;
 }
+
+.progress-content img {
+  width: 500px;
+  height: 250px;
+}

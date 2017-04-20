@@ -34,12 +34,29 @@
         <div class="col-md-2"></div>
       </div>
       <div class="row page-content">
-        <div class="col-md-6 col-xs-12">
-          <h3>The Arduino Uno</h3>
-          <img id="arduino-img" src="images/arduino_uno.jpg"></img>
+        <div class="progress-content col-md-6 col-xs-12">
+          <h1>Progress</h1>
+          <p>&emsp;We currently have two possible designs for our circuit after figuring out that our original plan was probably a
+          bit more complex then it needed to be. So far from our initial simulations both appear to do exactly what we need them to do.
+          However, after spending several hours in one of the circuit labs in FPAT, we could not manage to make either schematic simulation
+          a reality. Both circuits, despite being tweaked to perfection, simply did not produce the desired filtration around 330Hz. Instead,
+          they didn't even appear to be filtering anything at all.</p>
+          <p>&emsp;We have concluded thus far that the two main errors we may be having are:</p>
+          <ul>
+            <li>Usage of polarized capacitors for our RLC design. Either we were not using them correctly or we need to use non-polarized instead.
+            However, the low capacitance of non-polarized capacitors lead us to our second main issue with resistance.</li>
+            <li>Our resistor values, due to the low capacitance, are incredibly high (one being ~9.1MOhms) for our Band Pass Filter design. We are thinking
+            that this may be an issue because it is causing an insane amount of extra noise in the circuit making it difficult to read our oscilloscope, let
+            alone actually filter out everything but 330Hz.</li>
+          </ul>
+          <h3>Circuit I (RLC Design)</h3>
+          <img src="images/Circuit1.png">
+          <h3>Circuit II (Band Pass Filter)</h3>
+          <img src="images/Circuit2.png">
         </div>
         <div class="well col-md-6 col-xs-12">
           <h3>Meeting Minutes 4/14</h3>
+          <h6>Entire Team</h6>
           <ul>
             <li>Created github repository for our website</li>
             <li>Found our team logo</li>
@@ -49,6 +66,7 @@
             <li>Did some basic research on the project</li>
           </ul>
           <h3>Meeting Minutes 4/18</h3>
+          <h6>Entire Team</h6>
           <ul>
             <li>Started calculating resistor and capacitor values for our initial design</li>
             <li>We researched the design and decided to start with a Band Reject->Band Pass->Band Reject</li>
@@ -62,6 +80,14 @@
               </ul>
             </li>
             <li>Finalized what needed to be done for next meeting and decided on the next meeting date</li>
+          </ul>
+          <h3>Laboratory Minutes 4/19</h3>
+          <h6>Andy Conway and Parker Householder</h6>
+          <ul>
+            <li>Spent several hours in an FPAT circuits lab trying to build a functional prototype</li>
+            <li>We ran into several issues when trying to build Circuit I and Circuit II (seen on the left)</li>
+            <li>After multiple tries and multiple test builds with no success, we came to the conclusion that we might
+               need to use higher capacitance values in the Circuit II schematic</li>
           </ul>
         </div>
       </div>
