@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bode Boyz</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Character Set Encoding -->
+    <meta charset="utf-8">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row page-title">
+        <div class="col-md-2">
+          <img src="images/Hendrik_Wade_Bode.png"></img>
+        </div>
+        <div class="col-xs-12 col-md-10">
+          <h1>EE221 Guitar Filter Project</h1>
+          <h3>Bode Boyz Team Page</h3>
+        </div>
+    </div>
+
+      <div id="cssmenu">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="instruct.html">Instruct</a></li>
+      </ul>
+      </div>
+
+      <div class="row page-summary">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 col-xs-12">
+	
+
+          <center><h2>Instructional Step-By-Step</h2></center>
+          <p>&emsp;This page lists steps to build a Guitar
+            Filter which can amplify and isolate a particular string (E4 at ~330Hz).</p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row page-content">
+        <div class="progress-content col-md-6 col-xs-12">
+          <h1>How To</h1>
+          <p>&emsp;We currently have two possible designs for our circuit after figuring out that our original plan was probably a
+          bit more complex then it needed to be. So far from our initial simulations both appear to do exactly what we need them to do.
+          However, after spending several hours in one of the circuit labs in FPAT, we could not manage to make either schematic simulation
+          a reality. Both circuits, despite being tweaked to perfection, simply did not produce the desired filtration around 330Hz. Instead,
+          they didn't even appear to be filtering anything at all.</p>
+          <p>&emsp;We have concluded thus far that the two main errors we may be having are:</p>
+          <ul>
+            <li>Usage of polarized capacitors for our RLC design. Either we were not using them correctly or we need to use non-polarized instead.
+            However, the low capacitance of non-polarized capacitors lead us to our second main issue with resistance.</li>
+            <li>Our resistor values, due to the low capacitance, are incredibly high (one being ~9.1MOhms) for our Band Pass Filter design. We are thinking
+            that this may be an issue because it is causing an insane amount of extra noise in the circuit making it difficult to read our oscilloscope, let
+            alone actually filter out everything but 330Hz.</li>
+          </ul>
+          <h3>Circuit I (RLC Design)</h3>
+          <img src="images/Circuit1.png">
+          <h3>Circuit II (Band Pass Filter)</h3>
+          <img src="images/Circuit2.png">
+          <br><br>
+          <p>&emsp;When we started our meeting on the 25th of April, we noticed that the original amplification circuit designed on the 21st was no longer operational.
+            So we decided to strip the breadboard entirely, build it on a new breadboard, and retest the circuit. After about 30-60 minutes of testing, we managed to get
+            the amplifying part of the circuit functional again with the design shown below:</p>
+          <img src="images/Circuit3.png">
+          <br><br>
+          <p>&emsp;Here is also a freeze frame of the particular wave that our scope is reading from the guitar input:</p>
+          <img src="images/Wave1.png">
+          <br><br>
+          <p>&emsp;Our next step was trying to recreate the filter portion of the circuit to see if we could manage to actually filter out any particular frequencies. We started
+           by trying to build a simple high pass filter but the bode plot was flat lining from 50Hz to 1000Hz, which means that the filtration was far from functional.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
