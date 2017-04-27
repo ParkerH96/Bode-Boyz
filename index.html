@@ -58,12 +58,21 @@
             So we decided to strip the breadboard entirely, build it on a new breadboard, and retest the circuit. After about 30-60 minutes of testing, we managed to get
             the amplifying part of the circuit functional again with the design shown below:</p>
           <img src="images/Circuit3.png">
+          <img src="images/board.png">
           <br><br>
           <p>&emsp;Here is also a freeze frame of the particular wave that our scope is reading from the guitar input:</p>
           <img src="images/Wave1.png">
           <br><br>
           <p>&emsp;Our next step was trying to recreate the filter portion of the circuit to see if we could manage to actually filter out any particular frequencies. We started
            by trying to build a simple high pass filter but the bode plot was flat lining from 50Hz to 1000Hz, which means that the filtration was far from functional.</p>
+          <p>&emsp;We threw our filtration and amplification design into multisim to see what may be going wrong but managed to discover that in theory our design should be fully
+           functional. We looked at the Bode Plot of our high pass filter and it was creating the perfect output with a corner frequencey incredibly close to 330Hz. Here is the
+           tested diagram with the cooresponding Bode plot:</p>
+          <img src="images/Filter.png">
+          <img src="images/bode_plot.png">
+          <br><br>
+          <p>&emsp;As you can see our Bode plot is resonating right around 330Hz and filtering properly according to the multi sim simulation. So now we just need to figure out what
+            may be causing the error in filtration when we actually build the circuit onto the breadboard.</p>
         </div>
         <div class="well col-md-6 col-xs-12">
           <h3>Meeting Minutes 4/14</h3>
@@ -114,7 +123,15 @@
             <li>We wiped the board and began rebuilding the circuit on another board</li>
             <li>Got the amplification portion of the circuit working with an approximate gain of 200</li>
             <li>After the amplification circuit was operational, we set it aside and began redesigning the filter</li>
-            <li></li>
+          </ul>
+          <h3>Laboratory Minutes 4/27</h3>
+          <h6>Entire Team</h6>
+          <ul>
+            <li>We built and ran a simulation of our design in multisim and managed to get the perfect bode plot for
+             filtering every note except for the high E string</li>
+            <li>Knowing our simulation works, we started making several changes to test what may be the problem with
+             our actual build</li>
+            <li>We managed to start making progress by achieveing a slight filtration on about a 10dB scale</li>
           </ul>
         </div>
       </div>
