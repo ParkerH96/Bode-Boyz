@@ -41,26 +41,137 @@
             Filter which can amplify and isolate a particular string (E4 at ~330Hz).</p>
         </div>
         <div class="col-md-10">
-	  <center><h3>Regarding pitch and frequency...</h3></center>
-	  <p>&emsp;Pitch and frequency are often used interchangeably in the subject of
-	    music. There is, however, a dinstinction that must be made when discussing the
-	    physics of sound processing. Any object that vibrates in space produces an effect 
-	    that can be discerned by its repeated motion back and forth. This motion, when
-	    plotted on a graph with respect to time, can be seen as a wave. The number of
-	    times a particle of the object completes a back and forth motion per unit of time
-	    is what we define as frequency. In physics, we define the unit of Hertz as one
-	    vibration, or one complete motion back and forth, per second of time.
-	    <br><br>
-	    &emsp;Pitch can be defined as a specific frequency at which a musical note can be
-	    sensed. In music, the terms note and pitch are synonymous for this reason. We
-	    define certain frequencies as musical notes, or pitches. For instance, the
-	    frequency 329.6 Hz (Hertz) is defined as the E4 musical note or pitch. Frequency
-	    and pitch are one and the same, but to avoid any confusion, we must be sure 
-	    to understand their distinctions in the context of sound processing.
-	    <br><br>
-	    Sources: <a href="http://www.physicsclassroom.com/class/sound/Lesson-2/Pitch-and-Frequency">Physics Classroom - Sound Waves and Music - Pitch and Frequency</a>
-	  </p>
-	</div>
+      	  <center><h3>Regarding pitch and frequency...</h3></center>
+      	  <p>&emsp;Pitch and frequency are often used interchangeably in the subject of
+      	    music. There is, however, a dinstinction that must be made when discussing the
+      	    physics of sound processing. Any object that vibrates in space produces an effect
+      	    that can be discerned by its repeated motion back and forth. This motion, when
+      	    plotted on a graph with respect to time, can be seen as a wave. The number of
+      	    times a particle of the object completes a back and forth motion per unit of time
+      	    is what we define as frequency. In physics, we define the unit of Hertz as one
+      	    vibration, or one complete motion back and forth, per second of time.
+      	    <br><br>
+      	    &emsp;Pitch can be defined as a specific frequency at which a musical note can be
+      	    sensed. In music, the terms note and pitch are synonymous for this reason. We
+      	    define certain frequencies as musical notes, or pitches. For instance, the
+      	    frequency 329.6 Hz (Hertz) is defined as the E4 musical note or pitch. Frequency
+      	    and pitch are one and the same, but to avoid any confusion, we must be sure
+      	    to understand their distinctions in the context of sound processing.
+      	    <br><br>
+      	    Sources: <a class="link" href="http://www.physicsclassroom.com/class/sound/Lesson-2/Pitch-and-Frequency">Physics Classroom - Sound Waves and Music - Pitch and Frequency</a>
+            <br><br><strong>NOTE:</strong> Below each step you will notice a parts list needed for that step.
+            If you would like to purchase everything in a set you can use the <a href="http://store.digilentinc.com/analog-parts-kit-by-analog-devices-companion-parts-kit-for-the-analog-discovery/">
+            Digilent Analog Parts Kit</a> for parts along with the <a href="http://store.digilentinc.com/analog-discovery-2-100msps-usb-oscilloscope-logic-analyzer-and-variable-power-supply/">
+            Digilent Analog Discovery 2</a> for voltage supply and testing. The only parts necessairy for the project that are not included in the kit are: 1/4" female audio jack, 1/4" male cord, and a guitar.
+            You will need either a guitar and necessairy cabling/hook ups or the Analog Discovery 2 for appropriate testing of the circuit.
+      	  </p>
+          <h3>Step 1: Amplification</h3>
+          <h5>Parts Needed:</h5>
+          <ul class="parts-list well">
+            <li><a target="_blank" href="https://www.google.com/#q=1000+ohm+resistor&tbm=shop">1,000 Ohm Resistor</a></li>
+            <li><a target="_blank" href="https://www.google.com/#q=200000+ohm+resistor&tbm=shop">200,000 Ohm resistor</a></li>
+            <li><a target="_blank" href="https://www.google.com/#q=op37+amplifier&tbm=shop">OP37 Operational amplifier</a></li>
+            <li><a traget="_blank" href="https://www.google.com/#q=22+awg+wire">22 AWG Wire</a></li>
+            <li><a target="_blank" href="https://www.amazon.com/s/?ie=UTF8&keywords=bread+board+solderless&tag=googhydr-20&index=aps&hvadid=190869880969&hvpos=1t1&hvnetw=g&hvrand=6094579514935712726&hvpone=&hvptwo=&hvqmt=b&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9014324&hvtargid=kwd-297144446560&ref=pd_sl_1k73y5wa7s_b">Breadboard</a></li>
+            <li><a target="_blank" href="https://www.digikey.com/product-detail/en/soberton-inc/GT-0950RP3/433-1014-ND/479660">GT-0950RP3 Speaker/Buzzer</a></li>
+          </ul>
+          <p>&emsp;The first step to building this guitar filter is designing and building a
+            functional amplifier that will be filtered later on. This is so that we can actually
+            hear the output from the guitar rather than just noise. To accomplish this, we just
+            need to build a simple voltage gain circuit where the voltage in is from our guitar
+            and the output is sent to the speaker. Here is a diagram of the circuit for visual
+            reference:</p><br>
+            <div style="text-align: center"><img class="instruct-img" src="images/Circuit3.png"></img></div><br>
+          <p>&emsp;Start this circuit build by first connecting the appropriate power to the board.
+            Now in our build, we used the +/- 5V Supply from WaveForms and the Analog Discovery 2.
+            However, you could just as easily use an old phone charger as well. Just cut off the end
+            that plugged into the phone and seperate the ground and positive supply, stripping the ends
+            in order to plug into the board. Once you have power connected to the board, start by placing
+            your OP37 Operational amplifier onto the board and connecting power to it. Refer to the
+            <a href="http://www.analog.com/media/en/technical-documentation/data-sheets/OP37.pdf">data sheet</a>
+            for precise pin layouts.</p>
+          <p>&emsp;After the Op Amp is powered, go ahead and select an area for your voltage input
+            from the guitar to be placed. Using wire, connect one side directly into the positive input pin
+            on the op amp and connect the other side to ground. Now take the 1,000 Ohm resistor and connect
+            one side to ground and the other to the negative input pin on the op amp, leaving one pin of space
+            between the actual op amp pin and the resistor end on the breadboard. Take your 200,000 Ohm resistor
+            now and place one end in that space you left while tying the other end to the output pin of the op
+            amp. Finally, place your speaker down on the breadboard and tie one end to ground and the other to
+            the output pin of the op amp.
+          <h3>Step 2: Testing Amplification</h3>
+          <h5>Parts Needed:</h5>
+          <ul class="parts-list well">
+            <li>Electric Guitar</li>
+            <li>1/4" Male Cable</li>
+            <li>1/4" Female Audio Jack</li>
+            <li>Soldering Gun (for better connection between the audio jack and board)</li>
+            <li>5V Voltage Supply</li>
+            <li>Multimeter</li>
+          </ul>
+          <p>&emsp;Now that you have a fully built amplifier, it is time to test it and make sure there are no
+          incorrect, loose, or missing connections. Start by soldering two wires to the positive and negative ends
+          of your audio jack so that those wires can connect to your breadboard as the V<sub>in</sub>. Use a multimeter
+          to make certain as to which end is which before soldering! Once you have that connected you should be able to
+          just turn on/connect your 5V supply and strum the guitar to hear an amplification through the speaker.</p>
+          <div style="text-align: center"><img src="images/board.png" class="instruct-img"></img></div><br>
+          <p>&emsp;If you are not hearing any amplification from the speaker or if you are just hearing a bunch of noise,
+          you probably have a loose, inccorect, or missing connection somewhere. Pictured above is our working amplification
+          circuit that you may use as a reference. Note that in the current picture we were actually testing different V<sub>in</sub>
+          waves using WaveForms, thus on the right side we have that connected instead of the soldered audio jack. If
+          you are also using the Analog Discorvery 2, refer to the <a href="https://reference.digilentinc.com/reference/software/waveforms/waveforms-3/reference-manual">
+          WaveForms Documentation</a> by Digilent for using the Wavegen and scope. Otherwise, just continue to disconnect
+          the power source, tweak connections, reconnect the power source when a change has been finished, and then strum
+          the guitar again.</p>
+          <p>&emsp;If you are still experiencing problems, make sure the volume on the guitar is as high as possible and that the
+          op amp is properly powered. Also check and make sure that you are indeed giving it around a 5V power supply since
+          the particular op amp we are using is meant to work with voltages greater than or equal to 5. The last thing you can
+          try to tweak is the particular gain on the amplification circuit by changing the resistor values. The current gain
+          on our circuit is 200,000 Ohms / 1,000 Ohms = 200. This gain worked well for us but for certain configurations, speaker,
+          or guitar volumes it could be too high or too low. Eventually you will find the error and can move onto filtration. However,
+          like us, if you are still having issues you might need to swap out the bread board and rebuild the circuit entirely.</p>
+          <h3>Step 3: Filtration</h3>
+          <h5>Parts Needed:</h5>
+          <ul class="parts-list well">
+            <li><a target="_blank" href="https://www.google.com/#q=4700+ohm+resistor&tbm=shop">4,700 Ohm Resistor</a></li>
+            <li><a target="_blank" href="https://www.google.com/#q=.1+microfarad+capacitor&tbm=shop">.1 microfarad Capacitor</a></li>
+            <li><a target="_blank" href="https://www.google.com/#q=op37+amplifier&tbm=shop">OP37 Operational amplifier</a></li>
+            <li><a traget="_blank" href="https://www.google.com/#q=22+awg+wire">22 AWG Wire</a></li>
+            <li><a target="_blank" href="https://www.amazon.com/s/?ie=UTF8&keywords=bread+board+solderless&tag=googhydr-20&index=aps&hvadid=190869880969&hvpos=1t1&hvnetw=g&hvrand=6094579514935712726&hvpone=&hvptwo=&hvqmt=b&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9014324&hvtargid=kwd-297144446560&ref=pd_sl_1k73y5wa7s_b">Breadboard</a></li>
+          </ul>
+          <p>&emsp;Now that you have a functional and thoroughly tested amplification circuit, you can begin to add the filtration section.
+            The concept we used for this filter is a simple high pass filter considering we don't really need to worry about any frequencies
+            past high e since it is the highest note on a guitar. Since e resonates at about 330Hz we know our resistance needs to be roughly
+            4,700 Ohms and our Capacitance needs to be .1 microfarads. For more information on how we got those values, or just information on filters
+            in general you can refer to <a href="http://www.vyssotski.ch/BasicsOfInstrumentation/FilterDesignIn30Seconds.pdf">this</a> filter design guide.
+            Here is a picture of the final schematic with the added filtration:</p>
+          <div style="text-align: center"><img src="images/Filter.png" class="instruct-img"></img></div><br>
+          <p>&emsp;To build this portion of your circuit, we recommend using a seperate bread board so that you test each piece individually if needed with
+            ease. First, attach the new OP37 Operational amplifier onto the board and connect the same power lines over from the amplification circuit OP37.
+            Once the second OP37 is properly powered, place a capacitor onto the board. Following the circuit schematic above, disconnect the connection to the speaker
+            from the output pin of your your first OP37 and connect it to one end of the capacitor instead. Tie the other end to the positive input pin of your second
+            OP37 amp, leaving one space in between. Next take your 4,700 Ohm resistor and place one end into that empty space and tie the other end to ground.
+            Finally, take a wire and connect the negative input pin to the output pin of your second OP37 and then add another wire connecting the output pin back to the
+            speaker.</p>
+          <p>&emsp;Assuming you have wired everything properly, your gain output should now be going through a high pass filter followed by a voltage follower to
+            effectively filter all notes on the guitar except for the high e string. If that is not the case, go back to Step 2 and apply the same troubleshooting
+            process to your filtration section. For those of you using the Analog Discovery 2, you can disconnect the filtration circuit entirely from the amplification
+            section and use the Network tool to do a frequency sweep across your filter only. Check to see if the resulting bode plot looks similar to the one below.</p>
+          <div style="text-align: center"><img src="images/bode_plot.png" class="instruct-img"></img></div><br>
+          <h3>Conclusion</h3>
+          <p>&emsp;Once you have successfully been able to strum all chords on the guitar and achieve a noticeable difference when plucking the e string compared to every
+            other string, Congratulations! That means you have successfully created a filtration circuit for amplifying and isolating a particular string. Now you probably
+            will still notice that the speaker generally has a decenet amount of noise being projected when strings are not being plucked. That can definitely be modified by
+            adding a section to the circuit to handle noise cancellation. You will also notice that since we used a simple high pass design, you can still hear the rest of
+            the strings, just at a much lower decibel range. This can also be tweaked by modifying and combining several simple filters together to create a more narrow and fine
+            tuned acceptance region. Here is a sample clip of our filter in action:</p>
+          <div style="text-align: center">
+            <video class="instruct-vid" controls>
+              <source src="videos/presentation.MOV"></source>
+            </video>
+          </div>
+          <p>&emsp;To conclude, we want to mention that although I said you can't hear "anything", you actually can it's just really low and barely noticeable even in the video.
+            So essentially our filter does indeed work, we just didn't worry about making a narrow band of acceptance and instead went with a design that, with a little bit of noise
+            cancellation and a better speaker, would do exactly what it needed to do.
       </div>
     </div>
   </body>
