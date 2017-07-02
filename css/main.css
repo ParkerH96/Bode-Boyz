@@ -36,5 +36,9 @@ ul.nav.nav-tabs > li {
 .service-box h1 {
     color: white;
     text-align: center;
+    text-shadow: 2px 2px #333;
     padding: 10px 0px;
+}
+.service-box {
+  display: none;
 }
