@@ -6,7 +6,8 @@ ul.nav.nav-tabs li a {
     color: white;
     font-weight: 600;
 }
-ul.nav.nav-tabs li a:hover {
+ul.nav.nav-tabs li a:hover,
+ul.nav.nav-tabs li a:focus {
     background: rgba(255, 255, 255, 0.8);
     color: #0033A0;
 }
