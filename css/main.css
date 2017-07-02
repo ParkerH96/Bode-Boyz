@@ -7,7 +7,8 @@ ul.nav.nav-tabs li a {
     font-weight: 600;
 }
 ul.nav.nav-tabs li a:hover,
-ul.nav.nav-tabs li a:focus {
+ul.nav.nav-tabs li a:focus,
+ul.nav.nav-tabs li a.active-page {
     background: rgba(255, 255, 255, 0.8);
     color: #0033A0;
 }
@@ -16,4 +17,24 @@ ul.nav.nav-tabs > li > a {
 }
 ul.nav.nav-tabs > li {
     float: right;
+}
+
+
+.service-grid .col-md-4 .service-box {
+    background: rgba(0, 51, 160, 0.8);
+    height: 300px;
+    margin: 5px 0px;
+    width: 95%;
+    box-shadow: 5px 5px 5px;
+}
+.service-grid .col-md-4 {
+    padding: 0px 0px;
+}
+.service-grid .col-md-4 .service-box:hover {
+    box-shadow: none;
+}
+.service-box h1 {
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
 }
