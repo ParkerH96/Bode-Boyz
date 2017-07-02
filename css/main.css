@@ -42,3 +42,7 @@ ul.nav.nav-tabs > li {
 .service-box {
   display: none;
 }
+.service-grid .service-box .fa {
+    color:  white;
+    font-size: 15rem;
+}
