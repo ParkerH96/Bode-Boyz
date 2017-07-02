@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bode Boyz</title>
+    <meta charset="utf-8">
+    <title>Wildcat Gaming</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -11,204 +15,12 @@
     <!-- Character Set Encoding -->
     <meta charset="utf-8">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Main stylesheet -->
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <div class="container">
-      <div class="row page-title">
-        <div class="col-md-2">
-          <img src="images/Hendrik_Wade_Bode.png"></img>
-        </div>
-        <div class="col-xs-12 col-md-10">
-          <h1>EE221 Guitar Filter Project</h1>
-          <h3>Bode Boyz Team Page</h3>
-        </div>
-      </div>
-      <div id="cssmenu" class="row">
-        <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="instruct.html">Instruct</a></li>
-        </ul>
-      </div>
-      <div class="row page-summary">
-        <div class="col-md-2"></div>
-        <div class="col-md-8 col-xs-12">
-
-
-          <center><h2>Welcome</h2></center>
-          <p>&emsp;The "Bode Boyz" is a team comprised of 5 students majoring in Electrical Engineering, Computer Science,
-            and Computer Engineering at the University of Kentucky. The team members are Andy Conway, Taylor Riggs,
-            Parker Householder, Braden Vickers, and Tianyi Lyu. Our goal for this project is to build a Guitar
-            Filter which can amplify and isolate a particular string ().</p>
-        </div>
-        <div class="col-md-2"></div>
-      </div>
-      <div class="row page-content">
-        <div class="progress-content col-md-6 col-xs-12">
-          <h1>Progress</h1>
-          <p>&emsp;We currently have two possible designs for our circuit after figuring out that our original plan was probably a
-          bit more complex then it needed to be. So far from our initial simulations both appear to do exactly what we need them to do.
-          However, after spending several hours in one of the circuit labs in FPAT, we could not manage to make either schematic simulation
-          a reality. Both circuits, despite being tweaked to perfection, simply did not produce the desired filtration around 330Hz. Instead,
-          they didn't even appear to be filtering anything at all.</p>
-          <p>&emsp;We have concluded thus far that the two main errors we may be having are:</p>
-          <ul>
-            <li>Usage of polarized capacitors for our RLC design. Either we were not using them correctly or we need to use non-polarized instead.
-            However, the low capacitance of non-polarized capacitors lead us to our second main issue with resistance.</li>
-            <li>Our resistor values, due to the low capacitance, are incredibly high (one being ~9.1MOhms) for our Band Pass Filter design. We are thinking
-            that this may be an issue because it is causing an insane amount of extra noise in the circuit making it difficult to read our oscilloscope, let
-            alone actually filter out everything but 330Hz.</li>
-          </ul>
-          <h3>Circuit I (RLC Design)</h3>
-          <img src="images/Circuit1.png">
-          <h3>Circuit II (Band Pass Filter)</h3>
-          <img src="images/Circuit2.png">
-          <br><br>
-          <p>&emsp;When we started our meeting on the 25th of April, we noticed that the original amplification circuit designed on the 21st was no longer operational.
-            So we decided to strip the breadboard entirely, build it on a new breadboard, and retest the circuit. After about 30-60 minutes of testing, we managed to get
-            the amplifying part of the circuit functional again with the design shown below:</p>
-          <img src="images/Circuit3.png">
-          <img src="images/board.png">
-          <br><br>
-          <p>&emsp;Here is also a freeze frame of the particular wave that our scope is reading from the guitar input:</p>
-          <img src="images/Wave1.png">
-          <br><br>
-          <p>&emsp;Our next step was trying to recreate the filter portion of the circuit to see if we could manage to actually filter out any particular frequencies. We started
-           by trying to build a simple high pass filter but the bode plot was flat lining from 50Hz to 1000Hz, which means that the filtration was far from functional.</p>
-          <p>&emsp;We threw our filtration and amplification design into multisim to see what may be going wrong but managed to discover that in theory our design should be fully
-           functional. We looked at the Bode Plot of our high pass filter and it was creating the perfect output with a corner frequencey incredibly close to 330Hz. Here is the
-           tested diagram with the cooresponding Bode plot:</p>
-          <img src="images/Filter.png">
-          <img src="images/bode_plot.png">
-          <br><br>
-          <p>&emsp;As you can see our Bode plot is resonating right around 330Hz and filtering properly according to the multi sim simulation. So now we just need to figure out what
-            may be causing the error in filtration when we actually build the circuit onto the breadboard.</p>
-          <p>&emsp;After several hours and a few more team meetings, we finally were able to tweak our circuit and resolve the existing issues with the actual build that were causing
-          it to act differently than the simulation. We now have a fully functional amplification and filtration circuit that can connect to a guitar and filter out everything but the
-          high e note. Here is a picture of the final, operational circuit:</p>
-          <img src="images/Final-Circuit.png">
-          <br><br>
-          <p>&emsp;In the future we could definitely improve upon our circuit by adding noise cancellation so that that it's
-            easier to distinguish the filtration of the circuit and functionality. However, the project was still overall a huge success,
-            especially since most of us were ready accept whatever grade penalty for not having the filtration work in reality but having
-            a working simulation. The project was definitely very informative and a huge learning experience for all of us, and thus we
-            enjoyed it (somewhat). You may view our video of it's functionality on the <a href="instruct.html">Instructable Page</a></p>
-        </p>
-        </div>
-        <div class="well col-md-6 col-xs-12">
-          <h3>Meeting Minutes 4/14</h3>
-          <h6>Entire Team</h6>
-          <ul>
-            <li>Created github repository for our website</li>
-            <li>Found our team logo</li>
-            <li>Decided on next meeting for the coming week</li>
-            <li>Sent logo out to Dr. Lau</li>
-            <li>Established basic roles and started talking about what we would need</li>
-            <li>Did some basic research on the project</li>
-          </ul>
-          <h3>Meeting Minutes 4/18</h3>
-          <h6>Entire Team</h6>
-          <ul>
-            <li>Started calculating resistor and capacitor values for our initial design</li>
-            <li>We researched the design and decided to start with a Band Reject->Band Pass->Band Reject</li>
-            <li>Drew the initial rough sketch of our circuit</li>
-            <li>Discussed the difference between pitch and frequencey (Pitch refers to the sound)</li>
-            <li>Parts picked out:
-              <ul>
-                <li>Arduino Uno</li>
-                <li>Capacitors: 104M</li>
-                <li>1/4" Audio Jack</li>
-              </ul>
-            </li>
-            <li>Finalized what needed to be done for next meeting and decided on the next meeting date</li>
-          </ul>
-          <h3>Laboratory Minutes 4/19</h3>
-          <h6>Andy Conway and Parker Householder</h6>
-          <ul>
-            <li>Spent several hours in an FPAT circuits lab trying to build a functional prototype</li>
-            <li>We ran into several issues when trying to build Circuit I and Circuit II (seen on the left)</li>
-            <li>After multiple tries and multiple test builds with no success, we came to the conclusion that we might
-               need to use higher capacitance values in the Circuit II schematic</li>
-          </ul>
-          <h3>Laboratory Minutes 4/21</h3>
-          <h6>Parker Householder</h6>
-          <ul>
-            <li>Built a functional amplifier but could not get filtration working</li>
-            <li>Filtration appeared to work on multisim but not with the actual circuit</li>
-            <li>Amplification works via wavegen and through an actual guitar using a 1/4" audio jack</li>
-          </ul>
-          <h3>Laboratory Minutes 4/25</h3>
-          <h6>Entire Team</h6>
-          <ul>
-            <li>Started the meeting off discorvering that the circuit built on the 21st was no longer operational</li>
-            <li>We wiped the board and began rebuilding the circuit on another board</li>
-            <li>Got the amplification portion of the circuit working with an approximate gain of 200</li>
-            <li>After the amplification circuit was operational, we set it aside and began redesigning the filter</li>
-          </ul>
-          <h3>Laboratory Minutes 4/27</h3>
-          <h6>Entire Team</h6>
-          <ul>
-            <li>We built and ran a simulation of our design in multisim and managed to get the perfect bode plot for
-             filtering every note except for the high E string</li>
-            <li>Knowing our simulation works, we started making several changes to test what may be the problem with
-             our actual build</li>
-            <li>We managed to start making progress by achieveing a slight filtration on about a 10dB scale</li>
-          </ul>
-          <h3>Final Meeting 05/01</h3>
-          <h6>Entire Team</h6>
-          <ul>
-            <li>The team met to finalize the circuit</li>
-            <li>We finally discovered a grounding issue in the circuit which upon being fixed, made our circuit work
-              in reality rather than just in theory and simulations</li>
-            <li>Upon completion of the circuit and project, we began to conclude by creating the instrutable page and
-              writing in the last minutes and progress sections of the index page</li>
-            <li>We finished by establishing the roles everyone performed throughout the project. We also determined
-            that no role was really any less substantial than any other.</li>
-          </ul>
-          <h3>Web Development 05/02</h3>
-          <h6>Parker Householder</h6>
-          <ul>
-            <li>Finished the project out strong with late night web development</li>
-            <li>Finished the instructable page, added final minutes and Progress, and added final touches to the site overall</li>
-          </ul>
-          <h3>Final Team Participation Layout</h3>
-          <h6>Parker Householder</h6>
-          <ul>
-            <li>Worked on development and updated site (took Minutes)</li>
-            <li>Made most of the instructable page</li>
-            <li>Designed and built the original amplification circuit</li>
-            <li>Worked with Andy on a lot of the initial testing</li>
-          </ul>
-          <h6>Taylor Riggs</h6>
-          <ul>
-            <li>Helped out a lot by going and getting necessary parts (like the 1/4" jack)</li>
-            <li>Worked alongside Braden and Tianyi during main troubleshooting</li>
-            <li>Acted as the main circuit builder/tester</li>
-            <li>Helped facilitate communication amongst members with planning</li>
-          </ul>
-          <h6>Andy Conway</h6>
-          <ul>
-            <li>Worked on development of the site and updated the site</li>
-            <li>Made the first portion about pitch and frequency on the instructable page</li>
-            <li>Helped in providing parts for troubleshooting via the IEEE store</li>
-            <li>Worked with Parker on a lot of the initial testing</li>
-          </ul>
-          <h6>Braden Vickers</h6>
-          <ul>
-            <li>Did most of the research behind equations and filter design</li>
-            <li>Worked alongside Taylor and Tianyi during main troubleshooting</li>
-            <li>Acted as the main "formula" guy which helped us fix values of parts</li>
-            <li>Planned meetings</li>
-          </ul>
-          <h6>Tianyi Lyu</h6>
-          <ul>
-            <li>Built our schematics in multisim for the site and made our plots</li>
-            <li>Worked alongside Taylor and Braden during main troubleshooting</li>
-            <li>Discovered the final error in circuit which fixed our filter issue</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <h1>Zach is a big fat meany poophead</h1>
   </body>
 </html>
