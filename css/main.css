@@ -26,7 +26,7 @@ ul.nav.nav-tabs > li {
     position: relative;
     margin: 0 auto;
     width: 95%;
-    box-shadow: 5px 5px 5px;
+    box-shadow: 5px 5px 5px !important;
 }
 .service-grid .col-md-4 {
     padding: 0px 0px;
@@ -46,4 +46,12 @@ ul.nav.nav-tabs > li {
 .service-grid .service-box .fa {
     color:  white;
     font-size: 15rem;
+}
+.service-grid .col-md-4 a {
+  text-decoration: none;
+  color: #333;
+}
+.service-grid .col-md-4 a:hover,
+.service-grid .col-md-4 a:focus {
+  color: transparent;
 }
