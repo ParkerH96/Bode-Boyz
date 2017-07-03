@@ -42,7 +42,7 @@ ul.nav.nav-tabs > li {
 }
 .service-box {
   display: none;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 .service-grid .service-box .fa {
     color:  white;
