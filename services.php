@@ -32,14 +32,7 @@
     </script>
   </head>
   <body>
-    <ul class="nav nav-tabs">
-      <li><a href="#">Contact Us</a></li>
-      <li><a href="#">GoFundMe</a></li>
-      <li><a href="#">Store</a></li>
-      <li><a href="#">Gaming</a></li>
-      <li><a href="services.html" class="active-page">Services</a></li>
-      <li><a href="index.html">Home</a></li>
-    </ul>
+    <?php include 'nav.html'; ?>
     <div class="container service-grid">
       <div class="row">
         <div class="col-md-4">
