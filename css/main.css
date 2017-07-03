@@ -1,3 +1,6 @@
+/* =================================================
+                NAVIGATION BAR STYLE
+================================================== */
 ul {
     padding-left: 0px;
 }
@@ -22,7 +25,9 @@ ul.nav.nav-tabs > li {
     float: right;
 }
 
-
+/* =================================================
+                SERVICE GRID STYLE
+================================================== */
 .service-grid .col-md-4 .service-box {
     background: rgba(0, 51, 160, 0.8);
     height: 265px;
@@ -60,7 +65,9 @@ ul.nav.nav-tabs > li {
   color: transparent;
 }
 
-
+/* =================================================
+                FOOTER STYLE
+================================================== */
 footer {
     background-color: #333333;
     margin-top: 50px;
@@ -82,4 +89,28 @@ footer h3, footer p {
 footer .container h3,
 footer .container h5 {
   margin-top: 0px;
+}
+input#tlemail {
+    width: 60%;
+    border: none;
+    border-radius: 2px;
+    color: black;
+    height: 40px;
+}
+footer input[type="submit"]{
+    border: none;
+    background-color: rgba(0, 51, 160, .8);
+    color: white;
+    width: 30%;
+    height: 40px;
+}
+footer input[type="submit"]:hover {
+    cursor: pointer;
+}
+.newsletter-column h3,
+.newsletter-column p {
+    text-align: center;
+}
+.newsletter-column p {
+    margin-top: 10px;
 }
