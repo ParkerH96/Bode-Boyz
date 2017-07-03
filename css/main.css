@@ -1,3 +1,6 @@
+ul {
+    padding-left: 0px;
+}
 ul.nav.nav-tabs {
     background-color: rgba(0, 51, 160, .8);
 }
