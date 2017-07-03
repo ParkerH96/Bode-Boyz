@@ -56,3 +56,20 @@ ul.nav.nav-tabs > li {
 .service-grid .col-md-4 a:focus {
   color: transparent;
 }
+
+
+footer {
+    background-color: #333333;
+    margin-top: 50px;
+    padding: 20px 0px;
+}
+footer a {
+    color: white;
+}
+footer a:hover, footer a:focus {
+    color: #0033A0;
+}
+footer a h5 {
+    font-size: 18px;
+    font-weight: bold;
+}

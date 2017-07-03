@@ -27,14 +27,14 @@
       $(document).ready(function(){
         $(".service-box.row-1").fadeIn(1000);
         $(".service-box.row-2").delay(500).fadeIn(1000);
-        $(".service-box.row-3").delay(1000).fadeIn(500);
+        $(".service-box.row-3").delay(1000).fadeIn(1000);
       });
     </script>
   </head>
   <body>
     <ul class="nav nav-tabs">
       <li><a href="#">Contact Us</a></li>
-      <li><a href="https://www.gofundme.com/wildcat-gaming-lounge">GoFundMe</a></li>
+      <li><a target="_blank" href="https://www.gofundme.com/wildcat-gaming-lounge">GoFundMe</a></li>
       <li><a href="#">Store</a></li>
       <li><a href="#">Gaming</a></li>
       <li><a href="services.html" class="active-page">Services</a></li>
@@ -120,5 +120,38 @@
         </div>
       </div>
     </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <ul>
+              <li><a href="services.html"><h5>Services</h5></a></li>
+              <li><a href="#">PC Repair</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Tournaments</a></li>
+              <li><a href="#">Self Service</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul>
+              <li><a href="index.html"><h5>Wildcat Gaming</h5></a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">GoFundMe</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 newsletter-column">
+            <h3>Sign up for our Newsletter</h3>
+            <form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/wildcatgaming" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/wildcatgaming', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+              <p><label for="tlemail">Enter your email address</label></p>
+              <p><input type="text" style="width:140px" name="email" id="tlemail" /></p>
+              <input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" />
+              <p><a href="https://tinyletter.com/" target="_blank">powered by TinyLetter</a></p>
+            </form>
+            <p>859.432.0046 | <a href="mailto:wildcatgaminglegal@gmail.com">wildcatgaminglegal@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
