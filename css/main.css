@@ -79,3 +79,7 @@ footer a h5 {
 footer h3, footer p {
    color: white;
 }
+footer .container h3,
+footer .container h5 {
+  margin-top: 0px;
+}
