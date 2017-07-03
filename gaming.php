@@ -25,14 +25,7 @@
 
   </head>
   <body>
-    <ul class="nav nav-tabs">
-      <li><a href="#">Contact Us</a></li>
-      <li><a target="_blank" href="https://www.gofundme.com/wildcat-gaming-lounge">GoFundMe</a></li>
-      <li><a href="#">Store</a></li>
-      <li><a href="#">Gaming</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="index.html" class="active-page">Home</a></li>
-    </ul>
+    <?php include 'nav.html' ?>
     <footer>
       <div class="container">
         <div class="row">
