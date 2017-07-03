@@ -73,3 +73,6 @@ footer a h5 {
     font-size: 18px;
     font-weight: bold;
 }
+footer h3, footer p {
+   color: white;
+}
