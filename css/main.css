@@ -277,3 +277,25 @@ input[type=text]:focus, select:focus, textarea:focus {
   font-size: 8rem;
   color: 	#bb0000;
 }
+
+
+/* =================================================
+                SERVICE Page STYLE
+================================================== */
+.package-box {
+    background-color: #f2f2f2;
+    box-shadow: 5px 5px 5px #333;
+    padding: 10px 20px;
+}
+.package-box h1 {
+    text-align: center;
+}
+.package-container {
+    padding: 50px 0px;
+}
+.package-container h1 {
+    margin-bottom: 50px;
+}
+.span12 h1 {
+  text-align: center;
+}
