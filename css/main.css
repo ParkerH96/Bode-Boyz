@@ -121,6 +121,12 @@ ul.nav.nav-tabs > li {
 .full-width:nth-child(2n) p {
   color: #fff;
 }
+.full-width:nth-child(2n) hr {
+  border: 1px solid #fff;
+}
+.full-width:nth-child(2n + 1) hr {
+  border: 1px solid #000000;
+}
 .full-width p {
   font-size: 17px;
 }
