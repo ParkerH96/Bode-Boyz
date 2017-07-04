@@ -232,7 +232,7 @@ input[type=text]:focus, select:focus, textarea:focus {
     color: #A9A9A9;
     font-style: italic;
 }
-.connected-info > h4 {
+.connected-info h4 {
     padding-bottom: 0;
     color: #A9A9A9;
     font-style: normal;
@@ -264,6 +264,7 @@ input[type=text]:focus, select:focus, textarea:focus {
 }
 .fa-facebook-square {
     padding-top: 50px;
+    padding-bottom: 25px;
     font-size: 8rem;
     color: 	#3b5998;
     padding-right: 50px;
@@ -276,4 +277,7 @@ input[type=text]:focus, select:focus, textarea:focus {
 .fa-youtube-square {
   font-size: 8rem;
   color: 	#bb0000;
+}
+.btn-group {
+  left: 25%;
 }
