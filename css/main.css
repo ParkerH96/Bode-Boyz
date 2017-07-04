@@ -116,7 +116,7 @@ ul.nav.nav-tabs > li {
 }
 .full-width img {
   box-shadow: 5px 5px 5px #333;
-  width: 500px;
+  width: 100%;
 }
 .full-width:nth-child(2n) p {
   color: #fff;
