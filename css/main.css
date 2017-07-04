@@ -343,3 +343,10 @@ input[type=text]:focus, select:focus, textarea:focus {
 .span12 h1 {
   text-align: center;
 }
+
+/* =================================================
+                Store Page STYLE
+================================================== */
+.alert-warning {
+  margin-bottom: 0px;
+}
