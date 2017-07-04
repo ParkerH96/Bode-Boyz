@@ -34,38 +34,45 @@
   <body>
     <span id="header"></span>
 
-    <div class="container">
+    <div class="container contact-page">
+
+      <center><h2>Contact Us</h2></center>
 
       <div class="col-md-6">
         <div class="support-info">
           <h3>Support</h3>
-
         </div>
 
       </div>
 
         <div class="col-md-6">
-          <div class="contact-us">
+          <div class="contact-form">
 
-            <h3>Contact Us</h3>
-
-            <div class="container-fluid container-contact">
+            <div class="container-fluid well container-contact">
               <form action="https://formspree.io/wildcatgaminglegal@gmail.com" method="POST">
-
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="First Name" placeholder="Your name..">
-
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="Last Name" placeholder="Your last name..">
-
-                <label for="phone">Phone Number</label>
-                <input type="text" id="phone" name="Phone Number" placeholder="Phone number..">
-
-                <label for="phone">Email</label>
-                <input type="text" id="email" name="_replyto" placeholder="Email..">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="First Name" placeholder="Your name..">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="Last Name" placeholder="Your last name..">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="phone">Phone Number</label><br>
+                    <input type="text" id="phone" name="Phone Number" placeholder="Phone number..">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="phone">Email</label><br>
+                    <input type="text" id="email" name="_replyto" placeholder="Email..">
+                  </div>
+                </div>
 
                 <label for="Reason">Reason for Contact</label>
-                <select id="reason" name="reason">
+                <select id="reason" name="_subject">
                   <option value="service request">Service Request</option>
                   <option value="inquiry">Inquiry</option>
                   <option value="lounge comment">Lounge Comment</option>
@@ -74,7 +81,7 @@
                 </select>
 
                 <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <textarea id="subject" name="Subject" placeholder="Write something.." style="height:100px"></textarea>
 
                 <input type="submit" value="Submit">
 
