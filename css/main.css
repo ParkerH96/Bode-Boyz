@@ -222,7 +222,7 @@ input[type=text]:focus, select:focus, textarea:focus {
 }
 .contact-page {
     padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 .contact-page h4 {
     padding-bottom: 40px;
