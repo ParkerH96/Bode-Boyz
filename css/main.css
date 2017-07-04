@@ -121,6 +121,9 @@ ul.nav.nav-tabs > li {
 .full-width:nth-child(2n) p {
   color: #fff;
 }
+.full-width p {
+  font-size: 17px;
+}
 .full-width h1 {
   font-size: 30pt;
   color: #000000;
