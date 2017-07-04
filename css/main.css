@@ -237,6 +237,10 @@ input[type=text]:focus, select:focus, textarea:focus {
     color: #A9A9A9;
     font-style: normal;
 }
+.connected-info > h3 {
+    padding-bottom: 10px;
+    font-style: normal;
+}
 #gofundme-btn {
   background-color: #f7b231;
 }
