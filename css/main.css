@@ -101,6 +101,9 @@ ul.nav.nav-tabs > li {
 .service-grid .col-md-4 a:focus {
   color: transparent;
 }
+.last-row {
+  margin-bottom: 50px;
+}
 
 /* =================================================
                 HOME STYLE
