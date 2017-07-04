@@ -24,6 +24,7 @@ ul.nav.nav-tabs > li > a {
 }
 ul.nav.nav-tabs > li {
     float: right;
+    right: 100px;
 }
 
 
@@ -54,7 +55,6 @@ ul.nav.nav-tabs > li {
   display: none;
   border-radius: 10px;
 }
-
 .service-grid .service-box .fa {
     color:  white;
     font-size: 15rem;
@@ -63,7 +63,6 @@ ul.nav.nav-tabs > li {
     -o-transition: opacity 0.3s ease-in;
     transition: opacity 0.3s ease-in;
 }
-
 .service-grid .service-box:hover .fa {
     position: absolute;
     z-index: -1;
@@ -74,25 +73,26 @@ ul.nav.nav-tabs > li {
     -o-transition: opacity 0.3s ease-in;
     transition: opacity 0.3s ease-in;
 }
-
 .service-grid .service-box p {
     visibility: hidden;
     opacity: 0;
+    padding-left: 3px;
+    padding-right: 3px;
 }
-
 .service-grid .service-box:hover p {
     visibility: visible;
     position: absolute;
     opacity: 1;
     color: white;
     font-size: 25px;
+    padding-left: 3px;
+    padding-right: 3px;
     text-align: center;
     -webkit-transition: opacity 0.5s ease-in;
     -moz-transition: opacity 0.5s ease-in;
     -o-transition: opacity 0.5s ease-in;
     transition: opacity 0.5s ease-in;
 }
-
 .service-grid .col-md-4 a {
   text-decoration: none;
   color: #333;
