@@ -8,6 +8,10 @@
 ul {
     padding-left: 0px;
 }
+/*.nav.nav-social {
+  background-color: #333333;
+  border: none;
+}*/
 ul.nav.nav-tabs {
     background-color: #333333;
     border: none;
@@ -15,7 +19,6 @@ ul.nav.nav-tabs {
 ul.nav.nav-tabs li a {
     padding: 20px 15px;
     color: white;
-    font-weight: 600;
 }
 ul.nav.nav-tabs li a:hover,
 ul.nav.nav-tabs li a:focus,
@@ -30,7 +33,55 @@ ul.nav.nav-tabs > li {
     float: right;
     right: 100px;
 }
-
+ul.nav.nav-tabs > a {
+    border-radius: 0px;
+    float: left;
+}
+.nav.nav-tabs .contact-social-facebook {
+  padding-left: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 15px;
+  display: inline-block;
+}
+.nav.nav-tabs .contact-social-twitter {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 15px;
+  display: inline;
+}
+.nav.nav-tabs .contact-social-youtube {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 15px;
+  display: inline;
+}
+.nav.nav-tabs .contact-social-twitch {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline;
+}
+.nav.nav-tabs .fa {
+    font-size: 2rem;
+    color: 	white;
+    padding: 0;
+}
+.nav.nav-tabs .fa-facebook-square:hover {
+    font-size: 2rem;
+    color: 	#3b5998;
+}
+.nav.nav-tabs .fa-twitter-square:hover {
+  font-size: 2rem;
+  color: 	#00aced;
+}
+.nav.nav-tabs .fa-youtube-square:hover {
+  font-size: 2rem;
+  color: 	#bb0000;
+}
+.nav.nav-tabs .fa-twitch:hover {
+  font-size: 2rem;
+  color: 	#6441A5;
+}
 
 /* =================================================
                 SERVICE GRID STYLE
@@ -308,24 +359,31 @@ input[type=text]:focus, select:focus, textarea:focus {
 .fa-facebook-square {
     padding-top: 50px;
     padding-bottom: 25px;
-    font-size: 8rem;
+    font-size: 7rem;
     color: 	#3b5998;
+    padding-left: 0px;
     padding-right: 50px;
-    padding-left: 20px;
 }
 .fa-twitter-square {
-  font-size: 8rem;
+  font-size: 7rem;
   color: 	#00aced;
   padding-right: 50px;
 }
 .fa-youtube-square {
-  font-size: 8rem;
+  font-size: 7rem;
   color: 	#bb0000;
+  padding-right: 50px;
+}
+.fa-twitch {
+  font-size: 7rem;
+  color: 	#6441A5;
 }
 .btn-group {
   left: 25%;
 }
-
+.contact-social:hover {
+  text-decoration: none;
+}
 /* =================================================
                 SERVICE Page STYLE
 ================================================== */
