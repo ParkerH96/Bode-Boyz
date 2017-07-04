@@ -5,7 +5,7 @@ ul {
     padding-left: 0px;
 }
 ul.nav.nav-tabs {
-    background-color: rgba(0, 51, 160, .8);
+    background-color: #333333;
     border: none;
 }
 ul.nav.nav-tabs li a {
@@ -58,13 +58,17 @@ ul.nav.nav-tabs > li {
 .service-grid .service-box .fa {
     color:  white;
     font-size: 15rem;
+    -webkit-transition: opacity 0.3s ease-in;
+    -moz-transition: opacity 0.3s ease-in;
+    -o-transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s ease-in;
 }
 
 .service-grid .service-box:hover .fa {
-    text-align: center;
-    z-index: -1;
     position: absolute;
+    z-index: -1;
     opacity: 0;
+    text-align: center;
     -webkit-transition: opacity 0.3s ease-in;
     -moz-transition: opacity 0.3s ease-in;
     -o-transition: opacity 0.3s ease-in;
@@ -79,10 +83,10 @@ ul.nav.nav-tabs > li {
 .service-grid .service-box:hover p {
     visibility: visible;
     position: absolute;
-    color: white;
-    text-align: center;
-    font-size: 25px;
     opacity: 1;
+    color: white;
+    font-size: 25px;
+    text-align: center;
     -webkit-transition: opacity 0.5s ease-in;
     -moz-transition: opacity 0.5s ease-in;
     -o-transition: opacity 0.5s ease-in;
