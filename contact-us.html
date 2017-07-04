@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Wildcat Gaming</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Character Set Encoding -->
+    <meta charset="utf-8">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <script>
+      $(document).ready(function(){
+        $("#header").load("nav.html");
+        $("footer").load("footer.html");
+      });
+    </script>
+
+  </head>
+  <body>
+    <span id="header"></span>
+
+    <div class="container">
+
+      <div class="col-md-6">
+        <div class="support-info">
+          <h3>Support</h3>
+
+        </div>
+
+      </div>
+
+        <div class="col-md-6">
+          <div class="contact-us">
+
+            <h3>Contact Us</h3>
+
+            <div class="container-fluid container-contact">
+              <form action="https://formspree.io/wildcatgaminglegal@gmail.com" method="POST">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phonenumber" placeholder="Phone Number..">
+
+                <label for="Reason">Reason for Contact</label>
+                <select id="reason" name="reason">
+                  <option value="service request">Service Request</option>
+                  <option value="inquiry">Inquiry</option>
+                  <option value="lounge comment">Lounge Comment</option>
+                  <option value="site problem">Site Problem</option>
+                  <option value="other">Other</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+    <footer id="footer"></footer>
+  </body>
+</html>
