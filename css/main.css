@@ -108,7 +108,6 @@ ul.nav.nav-tabs > a {
 }
 .service-box {
   display: none;
-  border-radius: 10px;
 }
 .service-grid .service-box .fa {
     color:  white;
