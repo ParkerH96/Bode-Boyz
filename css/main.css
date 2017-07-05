@@ -21,7 +21,9 @@ ul {
 }
 .navbar li a:hover,
 .navbar li a:focus,
-.navbar li a.active-page {
+.navbar li a.active,
+.navbar li a:visited,
+.navbar li a:active {
     background: rgba(255, 255, 255, 0.8);
     color: #0033A0!important;
 }
