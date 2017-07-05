@@ -403,6 +403,6 @@ input[type=text]:focus, select:focus, textarea:focus {
 /* =================================================
                 Store Page STYLE
 ================================================== */
-.alert-warning {
-  margin-bottom: 0px;
+.store-warning {
+  margin-bottom: 0px!important;
 }
