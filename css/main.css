@@ -7,79 +7,76 @@
 ================================================== */
 ul {
     padding-left: 0px;
+    padding-right: 100px;
 }
-/*.nav.nav-social {
-  background-color: #333333;
-  border: none;
-}*/
-ul.nav.nav-tabs {
+.navbar {
     background-color: #333333;
-    border: none;
+    border-radius: 0!important;
+    border: none!important;
+    margin-bottom: 0!important;
 }
-ul.nav.nav-tabs li a {
-    padding: 20px 15px;
-    color: white;
+.navbar .navbar-nav li a {
+    padding: 21px 15px!important;
+    color: white!important;
 }
-ul.nav.nav-tabs li a:hover,
-ul.nav.nav-tabs li a:focus,
-ul.nav.nav-tabs li a.active-page {
+.navbar li a:hover,
+.navbar li a:focus,
+.navbar li a.active-page {
     background: rgba(255, 255, 255, 0.8);
-    color: #0033A0;
+    color: #0033A0!important;
 }
-ul.nav.nav-tabs > li > a {
+.navbar-nav > li > a {
     border-radius: 0px;
 }
-ul.nav.nav-tabs > li {
-    float: right;
-    right: 100px;
-}
-ul.nav.nav-tabs > a {
+.navbar-nav > a {
     border-radius: 0px;
     float: left;
 }
-.nav.nav-tabs .contact-social-facebook {
+.navbar-header .icon-bar {
+  background-color: white;
+}
+.navbar-header button {
+  border: 1px solid white;
+}
+.navbar-header .contact-social-facebook {
   padding-left: 100px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 15px;
   display: inline-block;
 }
-.nav.nav-tabs .contact-social-twitter {
+.navbar-header .contact-social-twitter {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 15px;
   display: inline;
 }
-.nav.nav-tabs .contact-social-youtube {
+.navbar-header .contact-social-youtube {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 15px;
   display: inline;
 }
-.nav.nav-tabs .contact-social-twitch {
+.navbar-header .contact-social-twitch {
   padding-top: 20px;
   padding-bottom: 20px;
   display: inline;
 }
-.nav.nav-tabs .fa {
-    font-size: 2rem;
+.navbar-header .fa {
+    font-size: 2rem!important;
     color: 	white;
     padding: 0;
 }
-.nav.nav-tabs .fa-facebook-square:hover {
-    font-size: 2rem;
+.navbar-header .fa-facebook-square:hover {
     color: 	#3b5998;
 }
-.nav.nav-tabs .fa-twitter-square:hover {
-  font-size: 2rem;
+.navbar-header .fa-twitter-square:hover {
   color: 	#00aced;
 }
-.nav.nav-tabs .fa-youtube-square:hover {
-  font-size: 2rem;
+.navbar-header .fa-youtube-square:hover {
   color: 	#bb0000;
 }
-.nav.nav-tabs .fa-twitch:hover {
-  font-size: 2rem;
+.navbar-header .fa-twitch:hover {
   color: 	#6441A5;
 }
 
