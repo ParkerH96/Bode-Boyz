@@ -395,7 +395,7 @@ input[type=text]:focus, select:focus, textarea:focus {
     padding: 50px 0px;
 }
 .package-container h1 {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 .span12 h1 {
   text-align: center;
