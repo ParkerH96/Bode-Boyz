@@ -90,7 +90,8 @@ ul {
     position: relative;
     margin: 0 auto;
     width: 95%;
-    box-shadow: 5px 5px 5px !important;
+    box-shadow: 10px 10px 25px;
+    transition: all .4s ease;
 }
 .service-grid .col-md-4 {
     padding: 0px 0px;
