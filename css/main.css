@@ -448,3 +448,29 @@ input[type=text]:focus, select:focus, textarea:focus {
 .store-warning {
   margin-bottom: 0px!important;
 }
+
+/* =================================================
+                About Page STYLE
+================================================== */
+.zack-about, .parker-about {
+  display: none;
+}
+.full-width.team-row {
+  padding-top:0;
+}
+.team-top-row {
+  padding-top: 60px;
+}
+.team-image {
+  border-radius: 50%;
+}
+.team-image:hover {
+  cursor: pointer;
+}
+.team-row p {
+  width: 75%;
+  text-align: justify;
+}
+.team-row .main-content{
+  height: 300px;
+}
