@@ -57,6 +57,18 @@ ul {
     padding-left:  10px;
   }
 }
+
+@media (max-width: 991px) {
+  .navbar-toggle.wg-toggle {
+    display: block;
+  }
+  .navbar-collapse.collapse {
+      display: none !important;
+  }
+  .navbar-collapse.collapse.in {
+      display: block !important;
+  }
+}
 .navbar-header .contact-social-facebook {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -400,8 +412,17 @@ input[type=text]:focus, select:focus, textarea:focus {
 
 .package-box {
     background-color: #f2f2f2;
-    box-shadow: 5px 5px 5px #333;
+    box-shadow: 10px 10px 25px #333;
     padding: 10px 20px;
+    transition: all .4s ease;
+}
+@media (max-width: 992px) {
+  .package-box {
+      box-shadow: none;
+  }
+}
+.package-box:hover {
+    box-shadow: none;
 }
 .package-box h1 {
     text-align: center;
