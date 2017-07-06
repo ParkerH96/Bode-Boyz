@@ -9,22 +9,22 @@ ul {
     padding-left: 0px;
     padding-right: 100px;
 }
-.navbar {
+.navbar.wildcat-nav {
     background-color: #333333;
-    border-radius: 0!important;
-    border: none!important;
-    margin-bottom: 0!important;
+    border-radius: 0;
+    border: none;
+    margin-bottom: 0;
 }
-.navbar .navbar-nav li a {
-    padding: 21px 15px!important;
-    color: white!important;
+.navbar.wildcat-nav .navbar-nav li a {
+    padding: 21px 15px;
+    color: white;
 }
-.navbar li a:hover,
-.navbar li a:focus,
-.navbar li a.active,
-.navbar li a:active {
+.navbar.wildcat-nav li a:hover,
+.navbar.wildcat-nav li a:focus,
+.navbar.wildcat-nav li a.active,
+.navbar.wildcat-nav li a:active {
     background: rgba(255, 255, 255, 0.8);
-    color: #0033A0!important;
+    color: #0033A0;
 }
 .navbar-nav > li > a {
     border-radius: 0px;
