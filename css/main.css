@@ -9,6 +9,11 @@ ul {
     padding-left: 0px;
     padding-right: 100px;
 }
+@media (max-width: 767px){
+    ul {
+      padding-right: 0px;
+    }
+}
 .navbar.wildcat-nav {
     background-color: #333333;
     border-radius: 0;
