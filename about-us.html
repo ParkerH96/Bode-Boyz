@@ -27,10 +27,13 @@
         $("#header").load("nav.html");
         $("footer").load("footer.html");
         $(".main-content").fadeIn(1000);
+        // if(window.innerWidth > 992){
         $("#zack-image") // select your element (supports CSS selectors)
             .hover(function(){ // trigger the mouseover event
                 $(".learn-more").hide(),
                 $(".parker-about").hide(),
+                $("#zack-image").fadeIn().css('opacity','1'),
+                $("#parker-image").fadeIn().css('opacity','.5'),
                 $(".zack-about").fadeIn(400).show();
               }, function(){
                 $(".learn-more").hide(),
@@ -40,11 +43,14 @@
             .hover(function(){ // trigger the mouseover event
                 $(".learn-more").hide(),
                 $(".zack-about").hide(),
+                $("#zack-image").fadeIn().css('opacity','.5'),
+                $("#parker-image").fadeIn().css('opacity','1'),
                 $(".parker-about").fadeIn(400).show();
               }, function(){
                 $(".learn-more").hide(),
                 $(".zack-about").hide();
         });
+      // }
       });
     </script>
 
@@ -64,15 +70,15 @@
     <div class="full-width team-row">
       <div class="container main-content">
         <div class="row">
-          <div class="col-md-6">
-            <div class="col-md-6 team-top-row" style="padding-left: 0px!important; padding-right: 30px!important">
+          <div class="col-md-6 col-xs-6">
+            <div class="col-md-6 col-xs-12 team-top-row" style="padding-left: 0px!important; padding-right: 30px!important">
               <img id="zack-image" class="team-image" src="images/zack-arnett.jpg" style="width:100%" alt="">
             </div>
-            <div class="col-md-6 team-top-row" style="padding-left: 30px!important; padding-right: 0px!important">
+            <div class="col-md-6 col-xs-12 team-top-row" style="padding-left: 30px!important; padding-right: 0px!important">
               <img id="parker-image" class="team-image" src="images/parker-householder.jpg" style="width:100%" alt="">
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 col-xs-6">
             <center>
               <u><h2 class="learn-more">Learn More!</h2></u>
               <p class="learn-more">Hover over a picture of our team to find out more about each member of the team!</p>
@@ -84,12 +90,15 @@
                                   he was kid he would have loved. Being an Entrepenuer, he decided that
                                   he could just start himself. Bringing on Parker Householder onto the team
                                   to gain help and skills where he was lacking.</p>
-              <u><h2 class="parker-about">Parker HouseHolder</h2></u>
+              <u><h2 class="parker-about">Parker Householder</h2></u>
               <p class="parker-about">Parker is an undergraduate student at the University of Kentucky studying
                                   Computer Engineering. Parker is an employee at Awesome Inc as well as
                                   CSI where he programs websites for very large companies. In his free time,
                                   Parker enjoys learning more and more about HTML, CSS, and PHP.</p>
             </center>
+          </div>
+          <div class="col-md-6">
+
           </div>
         </div>
       </div>
