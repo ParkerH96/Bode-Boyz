@@ -13,6 +13,9 @@ ul {
     ul {
       padding-right: 0px;
     }
+    .navbar.wildcat-nav li {
+      border-bottom: 1px solid #ffffff;
+    }
 }
 .navbar.wildcat-nav {
     background-color: #333333;
