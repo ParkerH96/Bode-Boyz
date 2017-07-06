@@ -39,8 +39,17 @@ ul {
 .navbar-header button {
   border: 1px solid white;
 }
+@media (min-width: 768px){
+  .navbar-header .contact-social-facebook {
+    padding-left: 100px;
+  }
+}
+@media (max-width: 767px){
+  .navbar-header .contact-social-facebook {
+    padding-left:  10px;
+  }
+}
 .navbar-header .contact-social-facebook {
-  padding-left: 100px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 15px;
