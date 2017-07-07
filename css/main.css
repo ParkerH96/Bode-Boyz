@@ -280,6 +280,8 @@ footer input[type="submit"]:hover {
 }
 .gaming-page .row{
   padding: 25px 0px;
+  margin-left: 0;
+  margin-right: 0;
 }
 .gaming-page .row p {
   font-size: 17px;
