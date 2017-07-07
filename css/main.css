@@ -58,7 +58,7 @@ ul {
   }
 }
 
-@media (max-width: 991px) {
+/*@media (max-width: 991px) {
   .navbar-toggle.wg-toggle {
     display: block;
   }
@@ -68,7 +68,7 @@ ul {
   .navbar-collapse.collapse.in {
       display: block !important;
   }
-}
+}*/
 .navbar-header .contact-social-facebook {
   padding-top: 20px;
   padding-bottom: 20px;
