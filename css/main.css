@@ -469,20 +469,25 @@ input[type=text]:focus, select:focus, textarea:focus {
   text-align: justify;
   padding-bottom: 10px;
 }
-@media (min-width: 991px){
-  .zack-about, .parker-about, .madison-about {
+@media (min-width: 992px){
+  .zack-about, .parker-about, .madison-about, .mobile-view {
     display: none;
   }
   .zack-row {
     padding-left: 0px!important;
-    padding-right: 30px!important
+    padding-right: 30px!important;
   }
   .parker-row {
     padding-left: 30px!important;
-    padding-right: 0px!important
+    padding-right: 0px!important;
   }
   .team-image:hover {
     cursor: pointer;
+  }
+}
+@media (max-width: 991px){
+  .desktop-view {
+    display: none;
   }
 }
 .about-text-container {

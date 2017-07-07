@@ -38,8 +38,6 @@
         $("#header").load("nav.html");
         $("footer").load("footer.html");
         $(".main-content").fadeIn(1000);
-        if($(document).width() > 992){
-          $('.mobile-view').hide();
         $("#zack-image") // select your element (supports CSS selectors)
             .hover(function(){ // trigger the mouseover event
                 $(".learn-more").hide(),
@@ -53,7 +51,7 @@
                 $(".learn-more").hide(),
                 $(".madison-about").hide()
                 $(".parker-about").hide();
-        });
+            });
         $("#parker-image") // select your element (supports CSS selectors)
             .hover(function(){ // trigger the mouseover event
                 $(".learn-more").hide(),
@@ -67,7 +65,7 @@
                 $(".learn-more").hide(),
                 $(".madison-about").hide(),
                 $(".zack-about").hide();
-        });
+            });
         $("#madison-image") // select your element (supports CSS selectors)
             .hover(function(){ // trigger the mouseover event
                 $(".learn-more").hide(),
@@ -81,12 +79,7 @@
                 $(".learn-more").hide(),
                 $(".parker-about").hide(),
                 $(".zack-about").hide();
-        });
-      }
-      else{
-        $(".desktop-view").hide(),
-        $(".mobile-view").show();
-      }
+            });
       });
     </script>
 
