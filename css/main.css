@@ -452,9 +452,7 @@ input[type=text]:focus, select:focus, textarea:focus {
 /* =================================================
                 About Page STYLE
 ================================================== */
-.zack-about, .parker-about {
-  display: none;
-}
+
 .full-width.team-row {
   padding-top:0;
 }
@@ -473,5 +471,21 @@ input[type=text]:focus, select:focus, textarea:focus {
   padding-bottom: 10px;
 }
 .team-row .main-content{
-  height: 35%;
+  /*height: 35%;*/
+}
+@media (min-width: 991px){
+  .zack-about, .parker-about {
+    display: none;
+  }
+  .zack-row {
+    padding-left: 0px!important;
+    padding-right: 30px!important
+  }
+  .parker-row {
+    padding-left: 30px!important;
+    padding-right: 0px!important
+  }
+  .team-image:hover {
+    cursor: pointer;
+  }
 }

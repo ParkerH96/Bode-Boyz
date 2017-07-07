@@ -27,7 +27,8 @@
         $("#header").load("nav.html");
         $("footer").load("footer.html");
         $(".main-content").fadeIn(1000);
-        // if(window.innerWidth > 992){
+        if($(document).width() > 992){
+          $('.mobile-view').hide();
         $("#zack-image") // select your element (supports CSS selectors)
             .hover(function(){ // trigger the mouseover event
                 $(".learn-more").hide(),
@@ -50,7 +51,11 @@
                 $(".learn-more").hide(),
                 $(".zack-about").hide();
         });
-      // }
+      }
+      else{
+        $(".desktop-view").hide(),
+        $(".mobile-view").show();
+      }
       });
     </script>
 
@@ -69,12 +74,12 @@
     </div>
     <div class="full-width team-row">
       <div class="container main-content">
-        <div class="row">
-          <div class="col-md-6 col-xs-6">
-            <div class="col-md-6 col-xs-12 team-top-row" style="padding-left: 0px!important; padding-right: 30px!important">
+        <div class="row desktop-view">
+          <div class="col-md-6 col-xs-12">
+            <div class="col-md-6 col-xs-6 team-top-row zack-row">
               <img id="zack-image" class="team-image" src="images/zack-arnett.jpg" style="width:100%" alt="">
             </div>
-            <div class="col-md-6 col-xs-12 team-top-row" style="padding-left: 30px!important; padding-right: 0px!important">
+            <div class="col-md-6 col-xs-6 team-top-row">
               <img id="parker-image" class="team-image" src="images/parker-householder.jpg" style="width:100%" alt="">
             </div>
           </div>
@@ -99,6 +104,39 @@
           </div>
           <div class="col-md-6">
 
+          </div>
+        </div>
+        <div class="row mobile-view">
+          <div class="col-xs-12 team-top-row zack-row">
+            <center>
+              <img id="zack-image" class="team-image" src="images/zack-arnett.jpg" style="width:50%" alt="">
+            </center>
+          </div>
+          <div class="col-xs-12">
+            <center>
+              <u><h2 class="zack-about">Zack Arnett</h2></u>
+              <p class="zack-about"> Zack is an undergraduate student at the University of Kentucky studying
+                Computer Engineering and Computer Science. The idea for Wildcat Gaming
+                came to him when he was in Chicago going to a Rocket League LAN event.
+                He thought that if he had a place like a gaming lounge to go to when
+                he was kid he would have loved. Being an Entrepenuer, he decided that
+                he could just start himself. Bringing on Parker Householder onto the team
+                to gain help and skills where he was lacking.</p>
+            </center>
+          </div>
+          <div class="col-xs-12 team-top-row zack-row">
+            <center>
+              <img id="parker-image" class="team-image" src="images/parker-householder.jpg" style="width:50%" alt="">
+            </center>
+          </div>
+          <div class="col-xs-12">
+            <center>
+              <u><h2 class="parker-about">Parker Householder</h2></u>
+              <p class="parker-about">Parker is an undergraduate student at the University of Kentucky studying
+                                  Computer Engineering. Parker is an employee at Awesome Inc as well as
+                                  CSI where he programs websites for very large companies. In his free time,
+                                  Parker enjoys learning more and more about HTML, CSS, and PHP.</p>
+            </center>
           </div>
         </div>
       </div>
