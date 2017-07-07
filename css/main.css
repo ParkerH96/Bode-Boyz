@@ -462,9 +462,6 @@ input[type=text]:focus, select:focus, textarea:focus {
 .team-image {
   border-radius: 50%;
 }
-.team-image:hover {
-  cursor: pointer;
-}
 .team-row p {
   width: 75%;
   text-align: justify;
