@@ -33,22 +33,42 @@
             .hover(function(){ // trigger the mouseover event
                 $(".learn-more").hide(),
                 $(".parker-about").hide(),
+                $(".madison-about").hide(),
                 $("#zack-image").fadeIn().css('opacity','1'),
                 $("#parker-image").fadeIn().css('opacity','.5'),
+                $("#madison-image").fadeIn().css('opacity','.5'),
                 $(".zack-about").fadeIn(400).show();
               }, function(){
                 $(".learn-more").hide(),
+                $(".madison-about").hide()
                 $(".parker-about").hide();
         });
         $("#parker-image") // select your element (supports CSS selectors)
             .hover(function(){ // trigger the mouseover event
                 $(".learn-more").hide(),
                 $(".zack-about").hide(),
+                $(".madison-about").hide(),
                 $("#zack-image").fadeIn().css('opacity','.5'),
+                $("#madison-image").fadeIn().css('opacity','.5'),
                 $("#parker-image").fadeIn().css('opacity','1'),
                 $(".parker-about").fadeIn(400).show();
               }, function(){
                 $(".learn-more").hide(),
+                $(".madison-about").hide(),
+                $(".zack-about").hide();
+        });
+        $("#madison-image") // select your element (supports CSS selectors)
+            .hover(function(){ // trigger the mouseover event
+                $(".learn-more").hide(),
+                $(".zack-about").hide(),
+                $(".parker-about").hide(),
+                $("#zack-image").fadeIn().css('opacity','.5'),
+                $("#parker-image").fadeIn().css('opacity','.5'),
+                $("#madison-image").fadeIn().css('opacity','1'),
+                $(".madison-about").fadeIn(400).show();
+              }, function(){
+                $(".learn-more").hide(),
+                $(".parker-about").hide(),
                 $(".zack-about").hide();
         });
       }
@@ -75,35 +95,56 @@
     <div class="full-width team-row">
       <div class="container main-content">
         <div class="row desktop-view">
-          <div class="col-md-6 col-xs-12">
-            <div class="col-md-6 col-xs-6 team-top-row zack-row">
+          <div class="col-md-6">
+            <div class="col-md-6 team-top-row zack-row">
               <img id="zack-image" class="team-image" src="images/zack-arnett.jpg" style="width:100%" alt="">
             </div>
-            <div class="col-md-6 col-xs-6 team-top-row">
+            <div class="col-md-6 team-top-row">
               <img id="parker-image" class="team-image" src="images/parker-householder.jpg" style="width:100%" alt="">
             </div>
-          </div>
-          <div class="col-md-6 col-xs-6">
             <center>
-              <u><h2 class="learn-more">Learn More!</h2></u>
-              <p class="learn-more">Hover over a picture of our team to find out more about each member of the team!</p>
-              <u><h2 class="zack-about">Zack Arnett</h2></u>
-              <p class="zack-about"> Zack is an undergraduate student at the University of Kentucky studying
-                                  Computer Engineering and Computer Science. The idea for Wildcat Gaming
-                                  came to him when he was in Chicago going to a Rocket League LAN event.
-                                  He thought that if he had a place like a gaming lounge to go to when
-                                  he was kid he would have loved. Being an Entrepenuer, he decided that
-                                  he could just start himself. Bringing on Parker Householder onto the team
-                                  to gain help and skills where he was lacking.</p>
-              <u><h2 class="parker-about">Parker Householder</h2></u>
-              <p class="parker-about">Parker is an undergraduate student at the University of Kentucky studying
-                                  Computer Engineering. Parker is an employee at Awesome Inc as well as
-                                  CSI where he programs websites for very large companies. In his free time,
-                                  Parker enjoys learning more and more about HTML, CSS, and PHP.</p>
+              <div class="col-md-12 team-top-row zack-row">
+                <img id="madison-image" class="team-image" src="images/madison.jpg" style="width:50%" alt="">
+              </div>
             </center>
           </div>
           <div class="col-md-6">
-
+            <div class="container-fluid about-text-container">
+              <center>
+                <span class="learn-more">
+                  <u><h2>Learn More!</h2></u>
+                  <br>
+                  <p>Hover over a picture of our team to find out more about each member of the team!</p>
+                </span>
+                <span class="zack-about">
+                  <u><h2 >Zack Arnett</h2></u>
+                  <h3>Co-Owner & CEO</h3>
+                  <br>
+                  <p> Zack is an undergraduate student at the University of Kentucky studying
+                    Computer Engineering and Computer Science. The idea for Wildcat Gaming
+                    came to him when he was in Chicago going to a Rocket League LAN event.
+                    He thought that if he had a place like a gaming lounge to go to when
+                    he was kid he would have loved. Being an Entrepenuer, he decided that
+                    he could just start himself. Bringing on Parker Householder onto the team
+                    to gain help and skills where he was lacking.</p></span>
+                <span class="parker-about">
+                  <u><h2>Parker Householder</h2></u>
+                  <h3>Co-Owner & Head Web Development</h3>
+                  <br>
+                  <p>Parker is an undergraduate student at the University of Kentucky studying
+                    Computer Engineering. Parker is an employee at Awesome Inc as well as
+                    CSI where he programs websites for very large companies. In his free time,
+                    Parker enjoys learning more and more about HTML, CSS, and PHP.</p></span>
+                <span class="madison-about">
+                  <u><h2>Madison Bartlett</h2></u>
+                  <h3>PR and Marketing</h3>
+                  <br>
+                  <p>Madison is an undergraduate at the University of Kentucky studying
+                    Computer Science and Grapic Design. Madison is an employee at QT9
+                    where she has programmed and done sales. In her free time, Madison
+                    enjoys designing and decorating planners.</p></span>
+              </center>
+            </div>
           </div>
         </div>
         <div class="row mobile-view">
@@ -114,14 +155,17 @@
           </div>
           <div class="col-xs-12">
             <center>
-              <u><h2 class="zack-about">Zack Arnett</h2></u>
-              <p class="zack-about"> Zack is an undergraduate student at the University of Kentucky studying
-                Computer Engineering and Computer Science. The idea for Wildcat Gaming
-                came to him when he was in Chicago going to a Rocket League LAN event.
-                He thought that if he had a place like a gaming lounge to go to when
-                he was kid he would have loved. Being an Entrepenuer, he decided that
-                he could just start himself. Bringing on Parker Householder onto the team
-                to gain help and skills where he was lacking.</p>
+              <span class="zack-about">
+                <u><h2 >Zack Arnett</h2></u>
+                <h3>Co-Owner & CEO</h3>
+                <br>
+                <p> Zack is an undergraduate student at the University of Kentucky studying
+                  Computer Engineering and Computer Science. The idea for Wildcat Gaming
+                  came to him when he was in Chicago going to a Rocket League LAN event.
+                  He thought that if he had a place like a gaming lounge to go to when
+                  he was kid he would have loved. Being an Entrepenuer, he decided that
+                  he could just start himself. Bringing on Parker Householder onto the team
+                  to gain help and skills where he was lacking.</p></span>
             </center>
           </div>
           <div class="col-xs-12 team-top-row zack-row">
@@ -131,11 +175,31 @@
           </div>
           <div class="col-xs-12">
             <center>
-              <u><h2 class="parker-about">Parker Householder</h2></u>
-              <p class="parker-about">Parker is an undergraduate student at the University of Kentucky studying
-                                  Computer Engineering. Parker is an employee at Awesome Inc as well as
-                                  CSI where he programs websites for very large companies. In his free time,
-                                  Parker enjoys learning more and more about HTML, CSS, and PHP.</p>
+              <span class="parker-about">
+                <u><h2>Parker Householder</h2></u>
+                <h3>Co-Owner & Head Web Development</h3>
+                <br>
+                <p>Parker is an undergraduate student at the University of Kentucky studying
+                  Computer Engineering. Parker is an employee at Awesome Inc as well as
+                  CSI where he programs websites for very large companies. In his free time,
+                  Parker enjoys learning more and more about HTML, CSS, and PHP.</p></span>
+            </center>
+          </div>
+          <div class="col-xs-12 team-top-row zack-row">
+            <center>
+              <img id="madison-image" class="team-image" src="images/madison.jpg" style="width:50%" alt="">
+            </center>
+          </div>
+          <div class="col-xs-12">
+            <center>
+              <span class="madison-about">
+                <u><h2>Madison Bartlett</h2></u>
+                <h3>PR and Marketing</h3>
+                <br>
+                <p>Madison is an undergraduate at the University of Kentucky studying
+                  Computer Science and Grapic Design. Madison is an employee at QT9
+                  where she has programmed and done sales. In her free time, Madison
+                  enjoys designing and decorating planners.</p></span>
             </center>
           </div>
         </div>
