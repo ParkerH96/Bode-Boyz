@@ -490,6 +490,7 @@ input[type=text]:focus, select:focus, textarea:focus {
 .carousel-inner .carousel-item-left{
   transform: translateX(0);
 }
+
 /* =================================================
                 About Page STYLE
 ================================================== */
