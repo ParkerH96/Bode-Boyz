@@ -34,31 +34,19 @@
       ga('send', 'pageview');
     </script>
 
+    <script src="js/bootstrap.js"></script>
+
     <!-- Google Analytics -->
-    <script>
+    <script type="text/javascript">
+      var $ = jQuery.noConflict();
       $(document).ready(function(){
         $("#header").load("nav.html");
         $("footer").load("footer.html");
         $(".main-content").fadeIn(1000);
-        $('#myCarousel').carousel({
-        	interval: 10000
-        	})
-
-          $('.carousel .carousel-item').each(function(){
-              var next = $(this).next();
-              if (!next.length) {
-              next = $(this).siblings(':first');
-              }
-              next.children(':first-child').clone().appendTo($(this));
-
-              if (next.next().length>0) {
-              next.next().children(':first-child').clone().appendTo($(this));
-              }
-              else {
-                $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-              }
-          });
-
+        $('.carousel').carousel({
+          interval: 5000,
+          cycle: true
+          })
       });
     </script>
     <!-- Google Analytics -->
@@ -74,170 +62,7 @@
           <h4>Under Construction! Subscribe to our Newsletter to get alerts on when it will go live!</h4>
         </center></div>
       </div>
-    <!-- Construction Row -->
-<!--
-    <div class="container">
-        <div class="col-md-12">
-          <h2>Graphics Cards</h2>
-          <hr>
-          <div class="well">
-              <div id="myCarousel-graphic-cards" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="row">
-                          <div class="col-md-3">
-                            <a href="https://www.amazon.com/gp/product/B01N52C8RX?ie=UTF8&tag=ildcataming-20&camp=1789&linkCode=xm2&creativeASIN=B01N52C8RX"
-                            class="product-image">
-                              <img src="store-images/1080gtx.jpg" alt="GTX 1080 Graphics Card" class="img-responsive"/>
-                              <div class="product-text-image"><p>Gigabyte GeForce GTX 1080 8GB G1 Rock Graphic Card </p>
-                              <p class="price-text">$509.99</p></div>
-                            </a>
-                          </div>
-                          <div class="col-md-3">
-                            <a href="https://www.amazon.com/gp/product/B01H0WU884?ie=UTF8&tag=ildcataming-20&camp=1789&linkCode=xm2&creativeASIN=B01H0WU884"
-                            class="product-image">
-                              <img src="store-images/1070gtx.jpg" alt="GTX 1070 Graphics Card" class="img-responsive"/>
-                              <div class="product-text-image"><p>Gigabyte GeForce GTX 1070 G1 GAMING-8GD</p>
-                              <p class="price-text">$638.99</p></div>
-                            </a>
-                          </div>
-                          <div class="col-md-3">
-                            <a href="https://www.amazon.com/gp/product/B01K1JTCZS?ie=UTF8&tag=ildcataming-20&camp=1789&linkCode=xm2&creativeASIN=B01K1JTCZS"
-                            class="product-image">
-                              <img src="store-images/1060gtx.jpg" alt="GTX 1060 Graphics Card" class="img-responsive"/>
-                              <div class="product-text-image"><p>ASUS Geforce GTX 1060 6GB Turbo Edition</p>
-                              <p class="price-text">$449.99</p></div>
-                            </a>
-                          </div>
-                          <div class="col-md-3">
-                            <a href="https://www.amazon.com/gp/product/B01MF7EQJZ?ie=UTF8&tag=ildcataming-20&camp=1789&linkCode=xm2&creativeASIN=B01MF7EQJZ"
-                            class="product-image">
-                              <img src="store-images/1050gtx.jpg" alt="GTX 1050 Graphics Card" class="img-responsive"/>
-                              <div class="product-text-image"><p>EVGA GeForce GTX 1050 Ti SC GAMING</p>
-                              <p class="price-text">$166.83</p></div>
-                            </a>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="row">
-                          <div class="col-md-3">
-                            <a href="https://www.amazon.com/gp/product/B01CSDZP60?ie=UTF8&tag=ildcataming-20&camp=1789&linkCode=xm2&creativeASIN=B01CSDZP60"
-                            class="product-image">
-                              <img src="store-images/asusr7.jpg" alt="Asus R7 250 Graphics Card" class="img-responsive"/>
-                              <div class="product-text-image"><p>ASUS AMD Radeon R7 250 1GB DDR5 128-Bit DisplayPort HDMI DVI</p>
-                              <p class="price-text">$77.95</p></div>
-                            </a>
-                          </div>
-                          <div class="col-md-3">
-                            <a href="https://www.amazon.com/gp/product/B0188DEE66?ie=UTF8&tag=ildcataming-20&camp=1789&linkCode=xm2&creativeASIN=B01A0CCH4O&th=1"
-                            class="product-image">
-                              <img src="store-images/asusr9.jpg" alt="ASUS STRIX-R9380X-4G-GAMING Graphic Card" class="img-responsive"/>
-                              <div class="product-text-image"><p>ASUS STRIX-R9380X-4G-GAMING Graphic Card</p>
-                              <p class="price-text">$412.50</p></div>
-                            </a>
-                          </div>
-                          <div class="col-md-3">
-                            <a href="https://www.amazon.com/gp/product/B071D8YQJD?ie=UTF8&tag=ildcataming-20&camp=1789&linkCode=xm2&creativeASIN=B071D8YQJD"
-                            class="product-image">
-                              <img src="store-images/asusrx.jpg" alt="ASUS ROG-STRIX-RX580-O8G-GAMINGOC Edition" class="img-responsive"/>
-                              <div class="product-text-image"><p>ASUS ROG-STRIX-RX580-O8G-GAMINGOC Edition</p>
-                              <p class="price-text">$658.90</p></div>
-                            </a>
-                          </div>
-                          <div class="col-md-3">
-                            <a href="https://www.amazon.com/gp/product/B01K1JV83C?ie=UTF8&tag=ildcataming-20&camp=1789&linkCode=xm2&creativeASIN=B01K1JV83C"
-                            class="product-image">
-                              <img src="store-images/asusrx480.jpg" alt="Gigabyte Radeon Rx 460 Windforce OC 2GB GDDR5" class="img-responsive"/>
-                              <div class="product-text-image"><p>Gigabyte Radeon Rx 460 Windforce OC 2GB GDDR5</p>
-                              <p class="price-text">$110.10</p></div>
-                            </a>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="left carousel-control" href="#myCarousel-graphic-cards" data-slide="prev">‹</a>
-
-                <a class="right carousel-control" href="#myCarousel-graphic-cards" data-slide="next">›</a>
-              </div>
-          </div>
-      </div>
-      <hr>
-      <div class="col-md-12">
-        <h2>Computer Cases</h2>
-        <hr>
-        <div class="well">
-            <div id="myCarousel-cases" class="carousel slide">
-              <div class="carousel-inner">
-                  <div class="item active">
-                      <div class="row">
-                        <div class="col-md-3">
-                          <a href="https://www.amazon.com/gp/product/B01N52C8RX?ie=UTF8&tag=ildcataming-20&camp=1789&linkCode=xm2&creativeASIN=B01N52C8RX"
-                          class="product-image">
-                            <img src="store-images/1080gtx.jpg" alt="GTX 1080 Graphics Card" class="img-responsive"/>
-                            <div class="product-text-image"><p>Gigabyte GeForce GTX 1080 8GB G1 Rock Graphic Card </p>
-                            <p class="price-text">$509.99</p></div>
-                          </a>
-                        </div>
-                        <div class="col-md-3">
-                          <a href="https://www.amazon.com/gp/product/B01H0WU884?ie=UTF8&tag=ildcataming-20&camp=1789&linkCode=xm2&creativeASIN=B01H0WU884"
-                          class="product-image">
-                            <img src="store-images/1070gtx.jpg" alt="GTX 1070 Graphics Card" class="img-responsive"/>
-                            <div class="product-text-image"><p>Gigabyte GeForce GTX 1070 G1 GAMING-8GD</p>
-                            <p class="price-text">$638.99</p></div>
-                          </a>
-                        </div>
-                        <div class="col-md-3">
-                          <a href="https://www.amazon.com/gp/product/B01K1JTCZS?ie=UTF8&tag=ildcataming-20&camp=1789&linkCode=xm2&creativeASIN=B01K1JTCZS"
-                          class="product-image">
-                            <img src="store-images/1060gtx.jpg" alt="GTX 1060 Graphics Card" class="img-responsive"/>
-                            <div class="product-text-image"><p>ASUS Geforce GTX 1060 6GB Turbo Edition</p>
-                            <p class="price-text">$449.99</p></div>
-                          </a>
-                        </div>
-                        <div class="col-md-3">
-                          <a href="https://www.amazon.com/gp/product/B01MF7EQJZ?ie=UTF8&tag=ildcataming-20&camp=1789&linkCode=xm2&creativeASIN=B01MF7EQJZ"
-                          class="product-image">
-                            <img src="store-images/1050gtx.jpg" alt="GTX 1050 Graphics Card" class="img-responsive"/>
-                            <div class="product-text-image"><p>EVGA GeForce GTX 1050 Ti SC GAMING</p>
-                            <p class="price-text">$166.83</p></div>
-                          </a>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="row">
-                          <div class="col-md-3"><a href="#x"><img style="width:100%" src="store-images/1050ti.jpg" alt="Image" class="img-responsive"></img></a>
-                          <div class="product-text-image"><p>EVGA GeForce GTX 1050 Ti SC GAMING</p></div>
-                          </div>
-                          <div class="col-md-3"><a href="#x"><img src="store-images/1050ti.jpg" alt="Image" class="img-responsive"></a>
-                          </div>
-                          <div class="col-md-3"><a href="#x"><img src="store-images/1050ti.jpg" alt="Image" class="img-responsive"></a>
-                          </div>
-                          <div class="col-md-3"><a href="#x"><img src="store-images/1050ti.jpg" alt="Image" class="img-responsive"></a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="row">
-                          <div class="col-md-3"><a href="#x"><img src="store-images/1050ti.jpg" alt="Image" class="img-responsive"></a>
-                          </div>
-                          <div class="col-md-3"><a href="#x"><img src="store-images/1050ti.jpg" alt="Image" class="img-responsive"></a>
-                          </div>
-                          <div class="col-md-3"><a href="#x"><img src="store-images/1050ti.jpg" alt="Image" class="img-responsive"></a>
-                          </div>
-                          <div class="col-md-3"><a href="#x"><img src="store-images/1050ti.jpg" alt="Image" class="img-responsive"></a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <a class="left carousel-control" href="#myCarousel-cases" data-slide="prev">‹</a>
-
-              <a class="right carousel-control" href="#myCarousel-cases" data-slide="next">›</a>
-            </div>
-        </div>
-    </div>
-  </div> -->
+    <!-- End Construction Row -->
 
     <footer id="footer"></footer>
   </body>
