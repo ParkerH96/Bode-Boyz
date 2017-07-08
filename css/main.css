@@ -555,11 +555,17 @@ input[type=text]:focus, select:focus, textarea:focus {
 .icon-box.wordpress-blue {
     background-color: #21759A;
 }
+.icon-box.light-blue {
+  background-color: #0092d6;
+}
 .icon-box.green {
     background-color: #008416;
 }
 .icon-box.orange {
   background-color: #f79000;
+}
+.icon-box.yellow {
+  background-color: #cec400;
 }
 .icon-box.red {
   background-color: #af1100;
