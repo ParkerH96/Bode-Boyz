@@ -555,6 +555,9 @@ input[type=text]:focus, select:focus, textarea:focus {
     text-align: center;
     box-shadow: 10px 10px 25px #333;
 }
+.web-development-page .package-row {
+  margin-bottom: 5%;
+}
 @media (max-width: 991px){
   .col-md-4 {
       margin-bottom: 5%;
