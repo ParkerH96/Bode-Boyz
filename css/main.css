@@ -454,6 +454,33 @@ input[type=text]:focus, select:focus, textarea:focus {
   padding-top:10%;
   width:5%;
 }
+.product-text-image {
+  position: absolute;
+  bottom: 0;
+  width: 89%;
+  color: white;
+  text-align: center;
+  background-color: black;
+  opacity: .5;
+}
+.price-text {
+  display: none;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeInUp {
+    from {transform: translate3d(0, 40%, 0);}
+    100% {transform: none; }
+}
+.product-image:hover .price-text {
+  display: block;
+  animation: fadeIn 1s;
+}
+.product-image:hover .product-text-image {
+  animation: fadeInUp .5s;
+}
 /* =================================================
                 About Page STYLE
 ================================================== */
