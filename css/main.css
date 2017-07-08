@@ -4,6 +4,9 @@
 .full-width-styless {
   width: 100%;
 }
+.a-black {
+  color: #000;
+}
 /* =================================================
                 NAVIGATION BAR STYLE
 ================================================== */
@@ -552,16 +555,16 @@ input[type=text]:focus, select:focus, textarea:focus {
     z-index: 1;
     cursor: pointer;
 }
-.icon-box.wordpress-blue {
+.icon-box.wordpress-blue, #wordpress-web-content {
     background-color: #21759A;
 }
 .icon-box.light-blue {
   background-color: #0092d6;
 }
-.icon-box.green {
+.icon-box.green, #basic-web-content {
     background-color: #008416;
 }
-.icon-box.orange {
+.icon-box.orange, #custom-web-content {
   background-color: #f79000;
 }
 .icon-box.yellow {
@@ -586,6 +589,9 @@ input[type=text]:focus, select:focus, textarea:focus {
   text-align: center;
   font-weight: 600;
 }
+.web-development-page .package-row .package-box:hover {
+  cursor: pointer;
+}
 @media (max-width: 991px){
   .col-md-4 {
       margin-bottom: 5%;
@@ -593,4 +599,7 @@ input[type=text]:focus, select:focus, textarea:focus {
   .col-md-4.website-img-box {
     margin-bottom: 0%;
   }
+}
+.web-development-page {
+  display: none;
 }
