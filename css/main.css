@@ -420,11 +420,6 @@ input[type=text]:focus, select:focus, textarea:focus {
     padding: 10px 20px;
     transition: all .4s ease;
 }
-@media (max-width: 992px) {
-  .package-box {
-      box-shadow: none;
-  }
-}
 .package-box:hover {
     box-shadow: none;
 }
@@ -559,4 +554,9 @@ input[type=text]:focus, select:focus, textarea:focus {
 .icon-box {
     text-align: center;
     box-shadow: 10px 10px 25px #333;
+}
+@media (max-width: 991px){
+  .col-md-4 {
+      margin-bottom: 5%;
+  }
 }
