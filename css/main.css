@@ -477,7 +477,7 @@ input[type=text]:focus, select:focus, textarea:focus {
   animation: fadeInUp .3s;
   animation-fill-mode: forwards;
 }
-.product-image:not(:hover) .product-text-image {
+.product-image .product-text-image {
   animation: fadeInDown .3s;
   animation-fill-mode: forwards;
 }
