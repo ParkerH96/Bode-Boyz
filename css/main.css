@@ -465,23 +465,21 @@ input[type=text]:focus, select:focus, textarea:focus {
   background-color: black;
   opacity: .5;
 }
-.price-text {
-  display: none;
-}
-@keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
-}
 @keyframes fadeInUp {
-    from {transform: translate3d(0, 40%, 0);}
-    100% {transform: none; }
+  from {height: 40px;}
+  to {height: 75px;}
 }
-.product-image:hover .price-text {
-  display: block;
-  animation: fadeIn 1s;
+@keyframes fadeInDown {
+  from {height: 75px;}
+  to {height: 40px;}
 }
 .product-image:hover .product-text-image {
-  animation: fadeInUp .5s;
+  animation: fadeInUp .3s;
+  animation-fill-mode: forwards;
+}
+.product-image:not(:hover) .product-text-image {
+  animation: fadeInDown .3s;
+  animation-fill-mode: forwards;
 }
 /* =================================================
                 About Page STYLE
