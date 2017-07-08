@@ -529,16 +529,34 @@ input[type=text]:focus, select:focus, textarea:focus {
 }
 
 
-.website-picture-container .col-md-4 {
+.website-picture-container .website-img-box {
     background-color: rgba(0, 0, 0, .8);
     padding: 0;
 }
-.website-picture-container .col-md-4 img {
+.website-picture-container .website-img-box img {
     position: relative;
     z-index: -1;
     width: 100%;
 }
-.website-picture-container .col-md-4:hover img {
+.website-picture-container .website-img-box:hover img {
     z-index: 1;
     cursor: pointer;
+}
+.icon-box.wordpress-icon-box {
+    background-color: #21759A;
+}
+.icon-box.basic-icon-box {
+    background-color: #008416;
+}
+.icon-box.custom-icon-box {
+  background-color: #f79000;
+}
+.icon-box .fa {
+    color: white;
+    font-size: 14rem;
+    padding: 10% 0;
+}
+.icon-box {
+    text-align: center;
+    box-shadow: 10px 10px 25px #333;
 }
