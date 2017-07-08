@@ -492,23 +492,6 @@ input[type=text]:focus, select:focus, textarea:focus {
 .product-image .price-text {
   display: none;
 }
-.carousels.carousel-inner .carousel-item-right.active,
-.carousels .carousel-inner .carousel-item-next {
-  transform: translateX(33.33%);
-}
-
-.carousels .carousel-inner .carousel-item-left.active,
-.carousels .carousel-inner .carousel-item-prev {
-  transform: translateX(-33.33%)
-}
-
-.carousels .carousel-inner .carousel-item-right,
-.carousels .carousel-inner .carousel-item-left{
-  transform: translateX(0);
-}
-.carousels .carousel-inner img {
-  width: 1000px;
-}
 .carousels .row {
   margin-left: 0;
   margin-right: 0;
