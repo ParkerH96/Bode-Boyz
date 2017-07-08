@@ -473,7 +473,7 @@ input[type=text]:focus, select:focus, textarea:focus {
   padding-bottom: 10px;
 }
 @media (min-width: 992px){
-  .mobile-view {
+  .zack-about, .parker-about, .madison-about, .mobile-view {
     display: none;
   }
   .zack-row {
