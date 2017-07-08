@@ -465,6 +465,7 @@ input[type=text]:focus, select:focus, textarea:focus {
 }
 .price-text {
   display: none;
+  transition-delay: 1s;
 }
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -474,12 +475,18 @@ input[type=text]:focus, select:focus, textarea:focus {
     from {transform: translate3d(0, 40%, 0);}
     100% {transform: none; }
 }
+@keyframes fadeInDown {
+    from {transform: translate3d(0, -50%, 0)}
+    100% {transform: none}
+}
 .product-image:hover .price-text {
   display: block;
-  animation: fadeIn 1s;
 }
 .product-image:hover .product-text-image {
-  animation: fadeInUp .5s;
+  animation: fadeInUp .3s;
+}
+.product-image:not(:hover) .product-text-image {
+  animation: fadeInDown .3s;
 }
 /* =================================================
                 About Page STYLE
