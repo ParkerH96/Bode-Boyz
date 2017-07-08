@@ -509,6 +509,10 @@ input[type=text]:focus, select:focus, textarea:focus {
 .carousels .carousel-inner img {
   width: 1000px;
 }
+.carousels .row {
+  margin-left: 0;
+  margin-right: 0;
+}
 .carousels .row:nth-child(2n){
   background: rgba(0, 51, 160, .8);
 }
