@@ -7,6 +7,9 @@
 .a-black {
   color: #000;
 }
+.a-black:hover, .a-black:focus {
+  text-decoration: none;
+}
 /* =================================================
                 NAVIGATION BAR STYLE
 ================================================== */
@@ -604,4 +607,7 @@ input[type=text]:focus, select:focus, textarea:focus {
 }
 .web-development-page {
   display: none;
+}
+#custom-web-content ul, #custom-web-content small {
+  color: white;
 }
