@@ -1,7 +1,9 @@
 .main-content {
   display: none;
 }
-
+.full-width-styless {
+  width: 100%;
+}
 /* =================================================
                 NAVIGATION BAR STYLE
 ================================================== */
@@ -526,4 +528,19 @@ input[type=text]:focus, select:focus, textarea:focus {
   background-color: #f2f2f2;;
   box-shadow: 10px 10px 25px #333;
   border-radius: 10px;
+}
+
+
+.website-picture-container .col-md-4 {
+    background-color: rgba(0, 0, 0, .8);
+    padding: 0;
+}
+.website-picture-container .col-md-4 img {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+}
+.website-picture-container .col-md-4:hover img {
+    z-index: 1;
+    cursor: pointer;
 }
