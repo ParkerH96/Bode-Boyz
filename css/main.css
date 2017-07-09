@@ -117,6 +117,50 @@ ul {
 .navbar-header .fa-twitch:hover {
   color: 	#6441A5;
 }
+@media (min-width: 766px){
+  .floating_link{
+    position: fixed;
+    display: block;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    /*background-color: #333;*/
+    border-radius: 10px;
+    -webkit-transform: rotate(90deg);
+    z-index: 50;
+    left: -60px;
+    transition:  left .3s;
+    -moz-transition: left .3s;
+    -webkit-transition: left .3s;
+    -o-transition:  left .3s;
+  }
+  #pc_float{
+       top: 300px;
+       background-color: #21759A;
+  }
+  #phone_float {
+    top: 402px;
+    background-color: #af1100;
+  }
+  #web_float{
+    top: 504px;
+    background-color: #f79000;
+  }
+  #gaming_float{
+    top: 606px;
+    background-color: #008416;
+  }
+  .floating_link h3 {
+    padding: 0;
+    margin-top: 13px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+  }
+  .floating_link:hover{
+    left: -50px;
+  }
+}
 
 /* =================================================
                 SERVICE GRID STYLE
