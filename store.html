@@ -47,25 +47,41 @@
             $('.carousel').carousel({ interval: 5000 });
           }());
 
-          (function(){
-            $('.carousel-showmanymoveone .item').each(function(){
-              var itemToClone = $(this);
+        (function(){
+          $('.carousel-showmanymoveone .item').each(function(){
+            var itemToClone = $(this);
 
-              for (var i=1;i<4;i++) {
-                itemToClone = itemToClone.next();
+            for (var i=1;i<4;i++) {
+              itemToClone = itemToClone.next();
 
-                // wrap around if at end of item collection
-                if (!itemToClone.length) {
-                  itemToClone = $(this).siblings(':first');
-                }
-
-                // grab item, clone, add marker class, add to collection
-                itemToClone.children(':first-child').clone()
-                  .addClass("cloneditem-"+(i))
-                  .appendTo($(this));
+              // wrap around if at end of item collection
+              if (!itemToClone.length) {
+                itemToClone = $(this).siblings(':first');
               }
-            });
-          }());
+
+              // grab item, clone, add marker class, add to collection
+              itemToClone.children(':first-child').clone()
+                .addClass("cloneditem-"+(i))
+                .appendTo($(this));
+            }
+          });
+        }());
+        $(".carousel").on("touchstart", function(event){
+            var xClick = event.originalEvent.touches[0].pageX;
+            $(this).one("touchmove", function(event){
+            var xMove = event.originalEvent.touches[0].pageX;
+            if( Math.floor(xClick - xMove) > 5 ){
+                $(this).carousel('next');
+            }
+            else if( Math.floor(xClick - xMove) < -5 ){
+                $(this).carousel('prev');
+            }
+        });
+          $(".carousel").on("touchend", function(){
+                  $(this).off("touchmove");
+          });
+        });
+
       });
     </script>
 
