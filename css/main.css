@@ -156,9 +156,15 @@ ul {
     color: white;
     font-size: 18px;
     text-align: center;
+    display: block;
   }
   .floating_link:hover{
     left: -50px;
+  }
+}
+@media (max-width: 765px) {
+  .floating_link h3 {
+    display: none;
   }
 }
 
