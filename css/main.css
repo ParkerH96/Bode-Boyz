@@ -705,10 +705,16 @@ input[type=text]:focus, select:focus, textarea:focus {
   .team-image:hover {
     cursor: pointer;
   }
+  .website-picture-container .website-img-box img {
+    z-index: -1;
+  }
 }
 @media (max-width: 991px){
   .desktop-view {
     display: none;
+  }
+  .website-picture-container .website-img-box img {
+    z-index: 1;
   }
 }
 .about-text-container {
@@ -724,7 +730,6 @@ input[type=text]:focus, select:focus, textarea:focus {
 }
 .website-picture-container .website-img-box img {
     position: relative;
-    z-index: -1;
     width: 100%;
 }
 .website-picture-container .website-img-box:hover img {
