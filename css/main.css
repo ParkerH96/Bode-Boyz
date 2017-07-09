@@ -124,7 +124,6 @@ ul {
     width: 100px;
     height: 100px;
     overflow: hidden;
-    /*background-color: #333;*/
     border-radius: 10px;
     -webkit-transform: rotate(90deg);
     z-index: 50;
@@ -135,19 +134,19 @@ ul {
     -o-transition:  left .3s;
   }
   #pc_float{
-       top: 300px;
+       top: 250px;
        background-color: #21759A;
   }
   #phone_float {
-    top: 402px;
+    top: 352px;
     background-color: #af1100;
   }
   #web_float{
-    top: 504px;
+    top: 454px;
     background-color: #f79000;
   }
   #gaming_float{
-    top: 606px;
+    top: 556px;
     background-color: #008416;
   }
   .floating_link h3 {
