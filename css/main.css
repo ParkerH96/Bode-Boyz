@@ -124,7 +124,6 @@ ul {
     width: 100px;
     height: 100px;
     overflow: hidden;
-    border-radius: 10px;
     -webkit-transform: rotate(90deg);
     z-index: 50;
     left: -60px;
