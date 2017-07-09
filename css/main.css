@@ -510,6 +510,8 @@ input[type=text]:focus, select:focus, textarea:focus {
 }
 
 /*<!-- Test-->*/
+.carousel .carousel-control { visibility: hidden; }
+.carousel:hover .carousel-control { visibility: visible; }
 .carousel-showmanymoveone .carousel-control {
   width: 4%;
   background-image: none;
