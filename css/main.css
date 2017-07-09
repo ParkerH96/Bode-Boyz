@@ -619,6 +619,9 @@ input[type=text]:focus, select:focus, textarea:focus {
   .amazon-wide-banner iframe {
     display: none;
   }
+  .product-text-image {
+    width: 91.3%;
+  }
 }
 
 /* =================================================
