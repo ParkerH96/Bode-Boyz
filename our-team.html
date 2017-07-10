@@ -40,45 +40,36 @@
         $(".main-content").fadeIn(1000);
         $("#zack-image") // select your element (supports CSS selectors)
             .hover(function(){ // trigger the mouseover event
-                $(".learn-more").hide(),
-                $(".parker-about").hide(),
-                $(".madison-about").hide(),
-                $("#zack-image").fadeIn().css('opacity','1'),
-                $("#parker-image").fadeIn().css('opacity','.5'),
-                $("#madison-image").fadeIn().css('opacity','.5'),
+                $(".learn-more, .madison-about, .parker-about").hide(),
+                $(this).fadeIn().css('opacity','1'),
+                $("#parker-image, #madison-image").fadeIn().css('opacity','.5'),
                 $(".zack-about").show();
+                $("#parker-image, #madison-image").removeClass("pulse");
+                $(this).addClass("pulse");
               }, function(){
-                $(".learn-more").hide(),
-                $(".madison-about").hide()
-                $(".parker-about").hide();
+                $(".learn-more, .madison-about, .parker-about").hide()
             });
         $("#parker-image") // select your element (supports CSS selectors)
             .hover(function(){ // trigger the mouseover event
-                $(".learn-more").hide(),
-                $(".zack-about").hide(),
-                $(".madison-about").hide(),
-                $("#zack-image").fadeIn().css('opacity','.5'),
-                $("#madison-image").fadeIn().css('opacity','.5'),
-                $("#parker-image").fadeIn().css('opacity','1'),
+                $(".learn-more, .zack-about, .madison-about").hide(),
+                $("#zack-image, #madison-image").fadeIn().css('opacity','.5'),
+                $(this).fadeIn().css('opacity','1'),
                 $(".parker-about").show();
+                $("#madison-image, #zack-image").removeClass("pulse");
+                $(this).addClass("pulse");
               }, function(){
-                $(".learn-more").hide(),
-                $(".madison-about").hide(),
-                $(".zack-about").hide();
+                $(".learn-more, .zack-about, .madison-about").hide()
             });
             $("#madison-image") // select your element (supports CSS selectors)
             .hover(function(){ // trigger the mouseover event
-                $(".learn-more").hide(),
-                $(".zack-about").hide(),
-                $(".parker-about").hide(),
-                $("#zack-image").fadeIn().css('opacity','.5'),
-                $("#parker-image").fadeIn().css('opacity','.5'),
-                $("#madison-image").fadeIn().css('opacity','1'),
+                $(".learn-more, .zack-about, .parker-about").hide(),
+                $("#zack-image, #parker-image").fadeIn().css('opacity','.5'),
+                $(this).fadeIn().css('opacity','1'),
                 $(".madison-about").show();
+                $("#zack-image, #parker-image").removeClass("pulse");
+                $(this).addClass("pulse");
               }, function(){
-                $(".learn-more").hide(),
-                $(".parker-about").hide(),
-                $(".zack-about").hide();
+                $(".learn-more. .parker-about, .zack-about").hide()
             });
       });
     </script>
