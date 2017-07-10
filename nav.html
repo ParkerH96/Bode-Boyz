@@ -47,12 +47,12 @@
 
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gaming.html">Gaming</a></li>
-        <li><a href="store.html">Store</a></li>
+        <li><a href="index.html" id="home">Home</a></li>
+        <li><a href="services.html" id="services">Services</a></li>
+        <li><a href="gaming.html" id="gaming">Gaming</a></li>
+        <li><a href="store.html" id="store">Store</a></li>
         <li><a target="_blank" href="https://www.gofundme.com/wildcat-gaming-lounge">GoFundMe</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a href="contact-us.html" id="contact-us">Contact Us</a></li>
       </ul>
     </div>
   </div>
@@ -77,7 +77,27 @@
     <h3>PC Builds</h3>
   </div>
 </a>
-
+<script type="text/javascript">
+  $(document).ready(function(){
+    let href = document.location.pathname.match(/[^\/]+$/)[0];
+    console.log(href);
+    if(href == 'index.html'){
+      $('#home').addClass('active');
+    }
+    else if(href == 'services.html'){
+      $('#services').addClass('active');
+    }
+    else if(href == 'gaming.html'){
+      $('#gaming').addClass('active');
+    }
+    else if(href == 'store.html'){
+      $('#store').addClass('active');
+    }
+    else if(href == 'contact-us.html'){
+      $('#contact-us').addClass('active');
+    }
+  });
+</script>
 <!-- ======= Old Nav Bar ============= -->
 <!-- ================================= -->
 
