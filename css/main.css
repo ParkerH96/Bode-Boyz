@@ -200,18 +200,20 @@ ul {
     -moz-transition: opacity 0.3s ease-in;
     -o-transition: opacity 0.3s ease-in;
     transition: opacity 0.3s ease-in;
+    position: absolute;
+    text-align: center;
+    width: 100%;
 }
 .service-grid .service-box:hover .fa {
-    position: absolute;
     z-index: -1;
     opacity: 0;
-    text-align: center;
     -webkit-transition: opacity 0.3s ease-in;
     -moz-transition: opacity 0.3s ease-in;
     -o-transition: opacity 0.3s ease-in;
     transition: opacity 0.3s ease-in;
 }
 .service-grid .service-box p {
+    position: absolute;
     visibility: hidden;
     opacity: 0;
     padding-left: 3px;
@@ -219,7 +221,6 @@ ul {
 }
 .service-grid .service-box:hover p {
     visibility: visible;
-    position: absolute;
     opacity: 1;
     color: white;
     font-size: 25px;
