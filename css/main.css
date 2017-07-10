@@ -123,6 +123,7 @@ ul {
     display: block;
     width: 100px;
     height: 100px;
+    border-radius: 4px;
     overflow: hidden;
     -webkit-transform: rotate(90deg);
     z-index: 50;
