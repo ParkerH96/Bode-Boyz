@@ -383,6 +383,7 @@ input[type=text], select, textarea {
 }
 input[type=text]:focus, select:focus, textarea:focus {
     border: 1px solid #0033A0;
+    box-shadow: 1px 1px 10px #0033A0;
 }
 .container-contact input[type=submit] {
     background-color: #0033A0;
