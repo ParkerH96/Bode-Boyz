@@ -829,6 +829,10 @@ img#keyboard-banner {
         left: 7.5%;
         width: 85%;
     }
+
+    i.fa.fa-arrow-down {
+        display: none;
+    }
 }
 @media (min-width: 769px){
     img#keyboard-banner {
@@ -843,21 +847,23 @@ img#keyboard-banner {
         left: 7%;
         width: 50%;
     }
+    i.fa.fa-arrow-down {
+        font-size: 10rem;
+        color: grey;
+        opacity: .3;
+        position: absolute;
+        bottom: 10%;
+        left: 45%;
+        padding: 10px;
+        border-radius: 500px;
+        box-shadow: 2px 2px 5px #333;
+        border: 2px solid grey;
+    }
+    i.fa.fa-arrow-down:hover {
+      cursor: pointer;
+    }
 }
+
 nav.navbar.wildcat-nav {
     z-index: 5;
-}
-i.fa.fa-arrow-down {
-    font-size: 10rem;
-    color: #0033A0;
-    position: absolute;
-    bottom: 10%;
-    left: 45%;
-    padding: 10px;
-    border-radius: 500px;
-    box-shadow: 2px 2px 5px #333;
-    border: 2px solid #0033A0;
-}
-i.fa.fa-arrow-down:hover {
-  cursor: pointer;
 }
