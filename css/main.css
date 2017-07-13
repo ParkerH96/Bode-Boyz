@@ -844,3 +844,6 @@ img#keyboard-banner {
         width: 50%;
     }
 }
+nav.navbar.wildcat-nav {
+    z-index: 5;
+}
