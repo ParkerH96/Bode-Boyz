@@ -50,7 +50,8 @@
                 $("#parker-image, #madison-image").removeClass("pulse");
                 $(this).addClass("pulse");
               }, function(){
-                $(".learn-more, .madison-about, .parker-about").hide()
+                $(".learn-more, .madison-about, .parker-about").hide(),
+                $(this).removeClass("pulse");
             });
         $("#parker-image") // select your element (supports CSS selectors)
             .hover(function(){ // trigger the mouseover event
@@ -61,7 +62,8 @@
                 $("#madison-image, #zack-image").removeClass("pulse");
                 $(this).addClass("pulse");
               }, function(){
-                $(".learn-more, .zack-about, .madison-about").hide()
+                $(".learn-more, .zack-about, .madison-about").hide(),
+                $(this).removeClass("pulse");
             });
       });
     </script>
