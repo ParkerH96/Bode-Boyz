@@ -293,6 +293,9 @@ footer a {
 footer li a {
   float: left;
 }
+footer ul {
+  list-style: none;
+}
 footer a:hover, footer a:focus {
     color: #0033A0;
 }
