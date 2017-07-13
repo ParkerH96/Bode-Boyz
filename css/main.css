@@ -290,6 +290,11 @@ footer {
 footer a {
     color: white;
 }
+@media (max-width: 349px) {
+  footer ul {
+    list-style-type: none;
+  }
+}
 footer li a {
   float: left;
 }
