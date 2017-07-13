@@ -802,3 +802,7 @@ input[type=text]:focus, select:focus, textarea:focus {
     transform: scale(1.1);
   }
 }
+
+.video {
+  opacity: 0.8;
+}
