@@ -804,5 +804,14 @@ input[type=text]:focus, select:focus, textarea:focus {
 }
 
 .video {
-  opacity: 0.8;
+  opacity: 0.7;
+}
+.home-video-header video#bg-video {
+    width: 100%;
+}
+.home-video-header img {
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    width: 50%;
 }
