@@ -814,4 +814,5 @@ input[type=text]:focus, select:focus, textarea:focus {
     top: 15%;
     left: 7%;
     width: 50%;
+    opacity: 0.8;
 }
