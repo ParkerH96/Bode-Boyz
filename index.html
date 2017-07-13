@@ -43,6 +43,13 @@
         $("#header").load("nav.html");
         $("#footer").load("footer.html");
         $(".main-content").fadeIn(1000);
+
+        $("i.fa.fa-arrow-down").hover(function(){
+          $(this).removeClass('pulse');
+        },
+        function(){
+          $(this).addClass('pulse');
+        });
       });
     </script>
 
@@ -55,9 +62,10 @@
           <source src="videos\key-vid.mp4" type="video/mp4">
         </video>
         <img id="logo-banner" src="images/banner.png" alt="wildcat gaming banner">
+        <a href="#home-1"><i class="fa fa-arrow-down pulse" aria-hidden="true"></i></a>
       </div>
       <div></div>
-      <div class="full-width home-row-1">
+      <div id="home-1" class="full-width home-row-1">
         <div class="container main-content">
           <div class="row">
             <div class="col-md-6">
