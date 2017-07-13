@@ -823,6 +823,12 @@ img#keyboard-banner {
     #bg-video {
         display: none;
     }
+    .home-video-header img#logo-banner {
+        position: absolute;
+        top: 22%;
+        left: 7.5%;
+        width: 85%;
+    }
 }
 @media (min-width: 769px){
     img#keyboard-banner {
@@ -830,5 +836,11 @@ img#keyboard-banner {
     }
     .home-row-1 {
       margin-top: -5px;
+    }
+    .home-video-header img#logo-banner {
+        position: absolute;
+        top: 15%;
+        left: 7%;
+        width: 50%;
     }
 }
