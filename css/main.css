@@ -811,7 +811,7 @@ input[type=text]:focus, select:focus, textarea:focus {
 }
 .home-video-header img {
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 7%;
     width: 50%;
 }
