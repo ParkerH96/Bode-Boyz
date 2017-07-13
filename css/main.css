@@ -828,4 +828,7 @@ img#keyboard-banner {
     img#keyboard-banner {
         display: none;
     }
+    .home-row-1 {
+      margin-top: -5px;
+    }
 }
